@@ -23,4 +23,5 @@ jobs:
         password: ${{ secrets.REMOTE_PWD }}
         run: |
           cd /root/app/github-actions
+          touch hello
           ./website.sh > website.log 2>&1
