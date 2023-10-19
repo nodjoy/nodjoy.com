@@ -15,7 +15,7 @@ jobs:
     - name: Deploy to server
       uses: appleboy/ssh-action@master
       with:
-        server: 123.249.31.52
+        host: 123.249.31.52
         user: root
         port: 22
         password: ${{ secrets.REMOTE_PWD }}
