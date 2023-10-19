@@ -16,8 +16,9 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: 123.249.31.52
-        username: root
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        user: 'root'
+        port: 22
+        pass: ${{ secrets.REMOTE_PWD }}
         script: |
           cd /root/app/github-actions
           ./website.sh
