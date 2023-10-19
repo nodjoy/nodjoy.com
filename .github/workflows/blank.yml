@@ -21,7 +21,4 @@ jobs:
         host: '123.249.31.52' # 远程服务器IP
         # ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
         password: ${{ secrets.REMOTE_PWD }}
-        run: |
-              cd /root/app/github-actions
-              touch hello
-              ./website.sh > website.log 2>&1
+        run: cd /root/app/github-actions && touch hello
