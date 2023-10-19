@@ -19,7 +19,8 @@ jobs:
         port: '22' # 远程服务器ssh端口，默认22
         # server: '123.249.31.52' # 远程服务器IP
         host: '123.249.31.52' # 远程服务器IP
-        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        # ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        password: ${{ secrets.REMOTE_PWD }}
         run: |
           cd /root/app/github-actions
           ./website.sh
