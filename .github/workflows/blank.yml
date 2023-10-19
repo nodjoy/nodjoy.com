@@ -15,10 +15,10 @@ jobs:
     - name: Deploy to server
       uses: appleboy/ssh-action@master
       with:
-        host: 123.249.31.52
-        user: 'root'
+        server: 123.249.31.52
+        user: root
         port: 22
         password: ${{ secrets.REMOTE_PWD }}
-        script: |
+        run: |
           cd /root/app/github-actions
           ./website.sh
