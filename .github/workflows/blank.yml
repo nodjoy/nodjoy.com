@@ -18,7 +18,7 @@ jobs:
         host: 123.249.31.52
         user: 'root'
         port: 22
-        pass: ${{ secrets.REMOTE_PWD }}
+        password: ${{ secrets.REMOTE_PWD }}
         script: |
           cd /root/app/github-actions
           ./website.sh
