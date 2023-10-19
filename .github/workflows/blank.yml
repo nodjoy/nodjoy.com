@@ -13,15 +13,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install SSH client
-        run: sudo apt-get install openssh-client -y
-
-      - name: SSH into server and execute script
-        uses: appleboy/ssh-action@master
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.0
         with:
-          host: 123.249.31.52
-          username: root
-          key: ${{ secrets.SSH_PRIVATE_123 }}
-          script: |
-            cd /root/app/github-actions
-            ./website.sh > wesite.log 2>&1
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_123 }}
+
+      - name: Run shell script on server
+        run: |
+          ssh -o StrictHostKeyChecking=no root@123.249.31.52 'bash -s' < /root/app/github-actions/website.sh
