@@ -1,17 +1,23 @@
-on: push  # 定义在push代码时触发
+name: Deploy
+
+on: 
+  push:
+    branches:
+      - main # 监听main分支
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
     steps:
     - uses: actions/checkout@v2
     
-    - name: Execute remote ssh commands
+    - name: Deploy to server
       uses: appleboy/ssh-action@master
       with:
-        host: 123.249.31.52 # 服务器 IP 
-        username: root # 服务器用户名
-        key: ${{ secrets.SSH_PRIVATE_123 }} # 加密的私钥,需要在github secrets中设置
-        script: | # 要执行的脚本
+        host: 123.249.31.52
+        username: root
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
           cd /root/app/github-actions
           ./website.sh
