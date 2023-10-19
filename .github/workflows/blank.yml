@@ -15,10 +15,10 @@ jobs:
     - name: Deploy to server
       uses: appleboy/ssh-action@master
       with:
-        host: 123.249.31.52
-        user: root
-        port: 22
-        password: ${{ secrets.REMOTE_PWD }}
+        username: 'root'   #ssh user name
+        port: '22' # 远程服务器ssh端口，默认22
+        server: '123.249.31.52' # 远程服务器IP
+        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
           cd /root/app/github-actions
           ./website.sh
