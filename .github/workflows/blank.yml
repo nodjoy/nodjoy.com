@@ -23,4 +23,5 @@ jobs:
           password: ${{ secrets.REMOTE_PWD }}
           script: |
             cd /root/app/github-actions
+            ./deploy_web.sh > deploy_web.log 2>&1
             touch hello
