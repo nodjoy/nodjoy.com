@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://nodjoy.com/BDsitemap.xml
