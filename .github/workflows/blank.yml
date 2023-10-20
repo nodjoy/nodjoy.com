@@ -1,6 +1,6 @@
 name: Deploy
 
-on: 
+on:
   push:
     branches:
       - main # 监听main分支
@@ -8,18 +8,19 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v2
-    
-    - name: Deploy to server
-      uses: appleboy/ssh-action@master
-      with:
-        username: 'root'   #ssh user name
-        port: '22' # 远程服务器ssh端口，默认22
-        # server: '123.249.31.52' # 远程服务器IP
-        host: '123.249.31.52' # 远程服务器IP
-        # ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-        password: ${{ secrets.REMOTE_PWD }}
-        run: |
-            cd /root/app/github-actions && touch hello
+      - uses: actions/checkout@v2
+
+      - name: Deploy to server
+        uses: appleboy/ssh-action@master
+        with:
+          username: ${{ secrets.USERNAME }} #ssh user name
+          port: ${{ secrets.PORT }} # 远程服务器ssh端口，默认22
+          # server: '123.249.31.52' # 远程服务器IP
+          host: ${{ secrets.HOST }} # 远程服务器IP
+          # ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          password: ${{ secrets.REMOTE_PWD }}
+          script: |
+            cd /root/app/github-actions
+            touch hello
