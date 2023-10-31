@@ -15,8 +15,9 @@ jobs:
         uses: foxundermoon/setup-qshell@v5
         with:
           version: '2.6.2'
-      - name: test qshell
+      - name: use qshell deploy
         run: |
+          echo 'The code is checked out to ${GITHUB_WORKSPACE}'
           qshell account ${{ secrets.QINIU_AK }} ${{ secrets.QINIU_SK }} nodjoy
           qshell qupload2 --src-dir=/home/runner/work/nodjoy.com/Deploy --bucket=nodjoy-com --overwrite=true
           curl -X GET 'https://api.day.app/${{ secrets.BARK_KEY }}/nodjoy.com同步至七牛云'
