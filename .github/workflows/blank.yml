@@ -10,17 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Deploy to server
-        uses: appleboy/ssh-action@master
+      - uses: actions/checkout@master
+      - name: Setup qshell
+        uses: foxundermoon/setup-qshell@v5
         with:
-          username: ${{ secrets.USERNAME }} #ssh user name
-          port: ${{ secrets.PORT }} # 远程服务器ssh端口，默认22
-          # server: '123.249.31.52' # 远程服务器IP
-          host: ${{ secrets.HOST }} # 远程服务器IP
-          # ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          password: ${{ secrets.REMOTE_PWD }}
-          script: |
-            cd /root/app/github-actions
-            ./deploy_web.sh > deploy_web.log 2>&1
+          version: '2.6.2'
+      - name: test qshell
+        run: |
+          qshell account ${{ secrets.QINIU_AK }} ${{ secrets.QINIU_SK }} nodjoy
+          qshell qupload2 --src-dir=/home/runner/work/nodjoy.com/Deploy --bucket=nodjoy-com --overwrite=true
+          curl -X GET 'https://api.day.app/${{ secrets.BARK_KEY }}/nodjoy.com同步至七牛云'
