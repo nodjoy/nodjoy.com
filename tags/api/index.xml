@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>api on Nod Joy</title>
+    <title>api on NodJoy</title>
     <link>https://nodjoy.com/tags/api/</link>
-    <description>Recent content in api on Nod Joy</description>
+    <description>Recent content in api on NodJoy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 10 Mar 2021 11:24:18 +0800</lastBuildDate><atom:link href="https://nodjoy.com/tags/api/index.xml" rel="self" type="application/rss+xml" />
