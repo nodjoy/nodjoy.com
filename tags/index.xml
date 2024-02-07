@@ -6,7 +6,34 @@
     <description>Recent content in Tags on NodJoy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 24 Aug 2023 19:58:34 +0800</lastBuildDate><atom:link href="https://nodjoy.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Feb 2024 13:48:06 +0800</lastBuildDate><atom:link href="https://nodjoy.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debian</title>
+      <link>https://nodjoy.com/tags/debian/</link>
+      <pubDate>Wed, 07 Feb 2024 13:48:06 +0800</pubDate>
+      
+      <guid>https://nodjoy.com/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://nodjoy.com/tags/linux/</link>
+      <pubDate>Wed, 07 Feb 2024 13:48:06 +0800</pubDate>
+      
+      <guid>https://nodjoy.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proxmox</title>
+      <link>https://nodjoy.com/tags/proxmox/</link>
+      <pubDate>Wed, 07 Feb 2024 13:48:06 +0800</pubDate>
+      
+      <guid>https://nodjoy.com/tags/proxmox/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>wsl</title>
       <link>https://nodjoy.com/tags/wsl/</link>
@@ -346,15 +373,6 @@
       <pubDate>Tue, 09 Feb 2021 13:09:10 +0800</pubDate>
       
       <guid>https://nodjoy.com/tags/bbr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://nodjoy.com/tags/linux/</link>
-      <pubDate>Tue, 09 Feb 2021 13:09:10 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/tags/linux/</guid>
       <description></description>
     </item>
     

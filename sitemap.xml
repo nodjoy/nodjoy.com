@@ -1,6 +1,20 @@
 <search>
     
      <entry>
+        <title>Proxmox升级openssh版本</title>
+        <url>https://nodjoy.com/tech/20240207/proxmox.html</url>
+        <categories>
+          <category>技术</category>
+        </categories>
+        <tags>
+          <tag>Proxmox</tag><tag>Debian</tag><tag>Linux</tag>
+        </tags>
+        <content type="html">  将openssh版本升级至9.6p1
+环境 OS: Proxmox7.4(Debian11) 设置apt源 sed -i &amp;#39;s@deb.debian.org@mirrors.huaweicloud.com@g&amp;#39; /etc/apt/sources.list sed -i &amp;#39;s@ftp.debian.org@mirrors.huaweicloud.com@g&amp;#39; /etc/apt/sources.list apt update 取消proxmox对软件卸载的限制 mv /usr/share/proxmox-ve/pve-apt-hook /usr/share/proxmox-ve/pve-apt-hook.bak touch /usr/share/proxmox-ve/pve-apt-hook &amp;amp;&amp;amp; chmod 777 /usr/share/proxmox-ve/pve-apt-hook 备份相关配置文件,卸载ssh systemctl stop ssh mv /etc/ssh /etc/ssh-bak &amp;amp;&amp;amp; mv /etc/pam.d/sshd /etc/pam.d/sshd-bak apt remove openssh-server 恢复pve-apt-hook mv /usr/share/proxmox-ve/pve-apt-hook.bak /usr/share/proxmox-ve/pve-apt-hook 安装依赖 apt install libssl-dev gcc g&#43;&#43; gdb cpp make cmake libtool libc6 autoconf automake pkg-config build-essential gettext apt install libzstd1 zlib1g libssh-4 libssh-dev libc6-dev libc6 libcrypt-dev libpam0g-dev Other helpful tools for debugging server issues are apt install netcat lsof wget diffutils Download the 9.6 archive cd /opt VER=9.6p1 wget https://mirrors.aliyun.com/pub/OpenBSD/OpenSSH/portable/openssh-${VER}.tar.gz Verify the download using gpg # Import the public signing key wget https://mirrors.aliyun.com/pub/OpenBSD/OpenSSH/RELEASE_KEY.asc gpg --import RELEASE_KEY.asc # Verify wget https://mirrors.aliyun.com/pub/OpenBSD/OpenSSH/portable/openssh-${VER}.tar.gz.asc gpg --verbose --verify openssh-${VER}.tar.gz.asc Build tar -xvf openssh-${VER}.tar.gz cd openssh-${VER} ./configure --prefix=/usr --sysconfdir=/etc/ssh --with-zlib --with-md5-passwords --with-pam make make install 还原备份文件 mv /etc/ssh /etc/ssh-9.6 &amp;amp;&amp;amp; mv /etc/ssh-bak /etc/ssh mv /etc/pam.d/sshd-bak /etc/pam.d/sshd 查看版本并启动 ssh -V systemctl unmask ssh systemctl start ssh 喜欢这篇文章的话 打赏一下吧！
+</content>
+    </entry>
+    
+     <entry>
         <title>Windows 10 WSL2 安装配置</title>
         <url>https://nodjoy.com/leaf/202308/wsl.html</url>
         <categories>
