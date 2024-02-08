@@ -127,6 +127,47 @@
         <a href="javascript:;" class="popup-trigger"> <i class="menu-item-icon fa fa-search fa-fw"></i> <br /> 搜索</a>
       </li>
     </ul>
+    
+    <ul id="menu-socials" class="menu menu-site menu-active">
+      
+      <li class="menu-item ">
+        <a href="https://github.com/nodjoy" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-github"></i> <br />GitHub
+          </a>
+        </li>
+      
+      <li class="menu-item ">
+        <a href="https://instagram.com/gowshwah" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-instagram"></i> <br />Instagram
+          </a>
+        </li>
+      
+      <li class="menu-item ">
+        <a href="https://weibo.com/u/6515305531" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-weibo"></i> <br />Weibo
+          </a>
+        </li>
+      
+      <li class="menu-item ">
+        <a href="mailto:nodjoy@163.com" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-envelope"></i> <br />Email
+          </a>
+        </li>
+      
+      <li class="menu-item ">
+        <a href="https://b23.tv/jFlb6ip" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-bilibili"></i> <br />Bilibili
+          </a>
+        </li>
+      
+      <li class="menu-item ">
+        <a href="https://bento.me/nodjoy" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-arrow-up-right-from-square"></i> <br />Bento
+          </a>
+        </li>
+      
+    </ul>
+    
     <ul id="menu-link" class="menu menu-site menu-active">
       
       <li class="menu-item ">
@@ -276,26 +317,26 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">阅读：</span>
-<span class="leancloud-visitors-count">245 字 ~1分钟</span>
+<span class="leancloud-visitors-count">262 字 ~1分钟</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
     <blockquote>
-<p>将openssh版本升级至9.6p1</p>
+<p>openssh版本升级至9.6p1</p>
 </blockquote>
 <h2 id="环境">环境</h2>
 <ul>
-<li>OS: Proxmox7.4(Debian11)</li>
+<li>OS: Proxmox7.4 (Debian11)</li>
 </ul>
 <h2 id="设置apt源">设置<code>apt</code>源</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s@deb.debian.org@mirrors.huaweicloud.com@g&#39;</span> /etc/apt/sources.list
 </span></span><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;s@ftp.debian.org@mirrors.huaweicloud.com@g&#39;</span> /etc/apt/sources.list
 </span></span><span style="display:flex;"><span>apt update
-</span></span></code></pre></div><h2 id="取消proxmox对软件卸载的限制">取消proxmox对软件卸载的限制</h2>
+</span></span></code></pre></div><h2 id="取消proxmox对软件卸载的限制暂时移除pve-apt-hook">取消proxmox对软件卸载的限制(暂时移除<code>pve-apt-hook</code>)</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mv /usr/share/proxmox-ve/pve-apt-hook /usr/share/proxmox-ve/pve-apt-hook.bak
 </span></span><span style="display:flex;"><span>touch /usr/share/proxmox-ve/pve-apt-hook <span style="color:#f92672">&amp;&amp;</span> chmod <span style="color:#ae81ff">777</span> /usr/share/proxmox-ve/pve-apt-hook
-</span></span></code></pre></div><h2 id="备份相关配置文件卸载ssh">备份相关配置文件,卸载ssh</h2>
+</span></span></code></pre></div><h2 id="备份相关配置文件并卸载ssh">备份相关配置文件并卸载ssh</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>systemctl stop ssh
 </span></span><span style="display:flex;"><span>mv /etc/ssh /etc/ssh-bak <span style="color:#f92672">&amp;&amp;</span> mv /etc/pam.d/sshd /etc/pam.d/sshd-bak
 </span></span><span style="display:flex;"><span>apt remove openssh-server
@@ -305,7 +346,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>apt install libssl-dev gcc g++ gdb cpp make cmake libtool libc6 autoconf automake pkg-config build-essential gettext
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>apt install libzstd1 zlib1g libssh-4 libssh-dev  libc6-dev libc6 libcrypt-dev libpam0g-dev
-</span></span></code></pre></div><h2 id="other-helpful-tools-for-debugging-server-issues-are">Other helpful tools for debugging server issues are</h2>
+</span></span></code></pre></div><h2 id="other-helpful-tools-for-debugging-server-issues">Other helpful tools for debugging server issues</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>apt install netcat lsof wget diffutils
 </span></span></code></pre></div><h2 id="download-the-96-archive">Download the 9.6 archive</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd /opt
@@ -325,7 +366,7 @@
 </span></span><span style="display:flex;"><span>./configure --prefix<span style="color:#f92672">=</span>/usr --sysconfdir<span style="color:#f92672">=</span>/etc/ssh --with-zlib --with-md5-passwords --with-pam
 </span></span><span style="display:flex;"><span>make
 </span></span><span style="display:flex;"><span>make install
-</span></span></code></pre></div><h2 id="还原备份文件">还原备份文件</h2>
+</span></span></code></pre></div><h2 id="还原配置文件">还原配置文件</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>mv /etc/ssh /etc/ssh-9.6 <span style="color:#f92672">&amp;&amp;</span> mv /etc/ssh-bak  /etc/ssh
 </span></span><span style="display:flex;"><span>mv /etc/pam.d/sshd-bak /etc/pam.d/sshd
 </span></span></code></pre></div><h2 id="查看版本并启动">查看版本并启动</h2>
@@ -406,6 +447,8 @@
     <a href="https://nodjoy.com/tags/debian" rel="tag" title="Debian">#Debian#</a>
     
     <a href="https://nodjoy.com/tags/linux" rel="tag" title="Linux">#Linux#</a>
+    
+    <a href="https://nodjoy.com/tags/openssh" rel="tag" title="OpenSSH">#OpenSSH#</a>
     
 </div>
 
@@ -498,6 +541,13 @@
         </span>
     
         <span class="links-of-author-item">
+        <a href="https://b23.tv/jFlb6ip" target="_blank" title="Bilibili">
+            <i class="fa fa-fw fa-bilibili"></i>
+            Bilibili
+        </a>
+        </span>
+    
+        <span class="links-of-author-item">
         <a href="https://bento.me/nodjoy" target="_blank" title="Bento">
             <i class="fa fa-fw fa-arrow-up-right-from-square"></i>
             Bento
@@ -527,7 +577,7 @@
     <div class="site-state-item site-state-tags">
         <a href="https://nodjoy.com/tags/">
          
-        <span class="site-state-item-count">72</span>
+        <span class="site-state-item-count">73</span>
         
         <span class="site-state-item-name">标签</span>
         </a>
@@ -661,15 +711,15 @@
   <ul>
     <li><a href="#环境">环境</a></li>
     <li><a href="#设置apt源">设置<code>apt</code>源</a></li>
-    <li><a href="#取消proxmox对软件卸载的限制">取消proxmox对软件卸载的限制</a></li>
-    <li><a href="#备份相关配置文件卸载ssh">备份相关配置文件,卸载ssh</a></li>
+    <li><a href="#取消proxmox对软件卸载的限制暂时移除pve-apt-hook">取消proxmox对软件卸载的限制(暂时移除<code>pve-apt-hook</code>)</a></li>
+    <li><a href="#备份相关配置文件并卸载ssh">备份相关配置文件并卸载ssh</a></li>
     <li><a href="#恢复pve-apt-hook">恢复<code>pve-apt-hook</code></a></li>
     <li><a href="#安装依赖">安装依赖</a></li>
-    <li><a href="#other-helpful-tools-for-debugging-server-issues-are">Other helpful tools for debugging server issues are</a></li>
+    <li><a href="#other-helpful-tools-for-debugging-server-issues">Other helpful tools for debugging server issues</a></li>
     <li><a href="#download-the-96-archive">Download the 9.6 archive</a></li>
     <li><a href="#verify-the-download-using-gpg">Verify the download using gpg</a></li>
     <li><a href="#build">Build</a></li>
-    <li><a href="#还原备份文件">还原备份文件</a></li>
+    <li><a href="#还原配置文件">还原配置文件</a></li>
     <li><a href="#查看版本并启动">查看版本并启动</a></li>
   </ul>
 </nav></div>
