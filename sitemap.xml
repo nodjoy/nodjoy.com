@@ -1,6 +1,22 @@
 <search>
     
      <entry>
+        <title>使用tcconfig为ipv6限速实践</title>
+        <url>https://nodjoy.com/tech/202403/tc_ipv6.html</url>
+        <categories>
+          <category>技术</category>
+        </categories>
+        <tags>
+          <tag>tc</tag><tag>网络</tag><tag>iperf</tag><tag>ipv6</tag>
+        </tags>
+        <content type="html"> 环境准备 OS: Ubuntu 软件: iperf tcconfig 安装iperf和tcconfig 在服务端A 安装iperf和tcconfig 在客户端B 安装iperf iperf apt install iperf tcconfig 下载tcconfig: https://github.com/thombashi/tcconfig/releases
+参考文档: https://tcconfig.readthedocs.io/en/latest/index.html
+使用ping6测试ipv6地址,保证客户端与服务端可以互通 ping6 -I ens33 ipv6 使用iperf连接 在客户端B 开启iperf服务 iperf -s -V 在服务端A 向客户端B发送数据 iperf -c [客户端B IPv6地址]%[当前设备的网卡] -V -t 60 -i 1 -b 20M -r 这将在服务器与客户端之间执行带宽测试，发送20M的数据，并且测试时间为60秒
+限速 在服务端A使用tcconfig执行限速 tcset ens33 --rate 1Mbps --network [ipv6_addr] --ipv6 重新发送数据测试,并观察网络带宽 喜欢这篇文章的话 打赏一下吧！
+</content>
+    </entry>
+    
+     <entry>
         <title>Proxmox升级openssh版本</title>
         <url>https://nodjoy.com/tech/20240207/proxmox.html</url>
         <categories>
