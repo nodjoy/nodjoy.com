@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rpmbuild on NodJoy</title>
+    <title>rpmbuild on Nodjoy</title>
     <link>https://nodjoy.com/tags/rpmbuild/</link>
-    <description>Recent content in rpmbuild on NodJoy</description>
+    <description>Recent content in rpmbuild on Nodjoy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 24 Mar 2022 19:48:46 +0800</lastBuildDate><atom:link href="https://nodjoy.com/tags/rpmbuild/index.xml" rel="self" type="application/rss+xml" />

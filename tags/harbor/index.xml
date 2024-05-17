@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Harbor on NodJoy</title>
+    <title>Harbor on Nodjoy</title>
     <link>https://nodjoy.com/tags/harbor/</link>
-    <description>Recent content in Harbor on NodJoy</description>
+    <description>Recent content in Harbor on Nodjoy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Thu, 07 Jul 2022 17:03:45 +0800</lastBuildDate><atom:link href="https://nodjoy.com/tags/harbor/index.xml" rel="self" type="application/rss+xml" />

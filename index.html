@@ -6,16 +6,16 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>NodJoy | NodJoy</title>
+    <title>Nodjoy | Nodjoy</title>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="keywords" content="独立,博客,程序员,个人,gowshwah,开发,思考,读书,笔记,技术,分享,PHP,Nodejs,Elixir,Docker,Linux,互联网,前端,后端">
     
-    <meta property="og:title" content="NodJoy">
-    <meta property="og:site_name" content="NodJoy">
+    <meta property="og:title" content="Nodjoy">
+    <meta property="og:site_name" content="Nodjoy">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="NodJoy - NodJoy" />
+    <meta name="title" content="Nodjoy - Nodjoy" />
     <meta name="description" content="博客 | 软件 | 开发 | PHP | Nodejs | Elixir | Docker  | Linux | 读书 | 笔记 | 个人 | gowshwah | 独立 | 思考 | 分享 | 互联网 | 前端 | 后端"> 
     <link rel="shortcut icon" href="https://nodjoy.com/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://nodjoy.com/img/apple-touch-icon.png" />
@@ -57,7 +57,7 @@
   <div class="custom-logo-site-title">
     <a href="https://nodjoy.com"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">NodJoy</span>
+      <span class="site-title">Nodjoy</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -283,6 +283,65 @@
             
     
  <section id="posts" class="posts-expand">
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://nodjoy.com/note/20240517/vm-nat.html" itemprop="url">
+        Proxmox虚拟机配置NAT网络
+        </a>
+      </h1>
+      <div class="post-meta">
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">时间：</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2024-05-17">
+    2024-05-17
+</time>
+</span> 
+      
+
+  <span class="post-category" >
+  &nbsp; | &nbsp;
+  <span class="post-meta-item-icon">
+    <i class="fa fa-folder-o"></i>
+  </span>
+  <span class="post-meta-item-text">分类：</span>
+  
+    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+      <a href="https://nodjoy.com/categories/%E7%AC%94%E8%AE%B0" itemprop="url" rel="index">
+        <span itemprop="name">笔记</span>
+      </a>
+      &nbsp; 
+    </span>
+  
+</span>
+
+
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+<span class="post-meta-item-text">阅读：</span>
+<span class="leancloud-visitors-count">330 字 ~1分钟</span>
+</span>
+      </div>
+    </header>
+    <div class="post-body" itemprop="articleBody">
+    环境准备 OS: Proxmox 7.4(Debian 11) 软件: dnsmasq 配置 新建网络 新建一个网络,例如 vmbr2 编辑网络配置 编辑网络配置： vi /etc/network/interfaces 末尾添加以下内容： post-up echo 1 &gt; /proc/sys/net/ipv4/ip_forward post-up iptables -t nat -A POSTROUTING -s &#39;192.168.100.0/24&#39; -o vmbr0 -j MASQUERADE post-down
+    </div>
+    
+    <div class="post-more-link text-center">
+    <a class="btn" href="https://nodjoy.com/note/20240517/vm-nat.html" rel="contents">
+      阅读全文 &raquo;
+    </a>
+    </div>
+    
+    <footer class="post-footer"><div class="post-eof"></div></footer>
+  </article>
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
@@ -697,65 +756,6 @@
     <footer class="post-footer"><div class="post-eof"></div></footer>
   </article>
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link" href="https://nodjoy.com/share/202208/aes-lib.html" itemprop="url">
-        Golang与PHP的AES加密解密互转
-        </a>
-      </h1>
-      <div class="post-meta">
-      <span class="post-time">
-<span class="post-meta-item-icon">
-    <i class="fa fa-calendar-o"></i>
-</span>
-<span class="post-meta-item-text">时间：</span>
-<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2022-08-11">
-    2022-08-11
-</time>
-</span> 
-      
-
-  <span class="post-category" >
-  &nbsp; | &nbsp;
-  <span class="post-meta-item-icon">
-    <i class="fa fa-folder-o"></i>
-  </span>
-  <span class="post-meta-item-text">分类：</span>
-  
-    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-      <a href="https://nodjoy.com/categories/%E5%88%86%E4%BA%AB" itemprop="url" rel="index">
-        <span itemprop="name">分享</span>
-      </a>
-      &nbsp; 
-    </span>
-  
-</span>
-
-
-       <span>
-&nbsp; | &nbsp;
-<span class="post-meta-item-icon">
-    <i class="fa fa-eye"></i>
-</span>
-<span class="post-meta-item-text">阅读：</span>
-<span class="leancloud-visitors-count">165 字 ~1分钟</span>
-</span>
-      </div>
-    </header>
-    <div class="post-body" itemprop="articleBody">
-    Golang与PHP的AES加密解密互转 使用Github上的mervick/aes-everywhere加密库 mervick/aes-eve
-    </div>
-    
-    <div class="post-more-link text-center">
-    <a class="btn" href="https://nodjoy.com/share/202208/aes-lib.html" rel="contents">
-      阅读全文 &raquo;
-    </a>
-    </div>
-    
-    <footer class="post-footer"><div class="post-eof"></div></footer>
-  </article>
-
 </section>
 
 
@@ -909,7 +909,7 @@
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://nodjoy.com/post/">
-        <span class="site-state-item-count">73</span>
+        <span class="site-state-item-count">74</span>
         <span class="site-state-item-name">日志</span>
       </a>
     </div>
@@ -926,7 +926,7 @@
     <div class="site-state-item site-state-tags">
         <a href="https://nodjoy.com/tags/">
          
-        <span class="site-state-item-count">77</span>
+        <span class="site-state-item-count">79</span>
         
         <span class="site-state-item-name">标签</span>
         </a>

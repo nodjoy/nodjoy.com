@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nodejs on NodJoy</title>
+    <title>nodejs on Nodjoy</title>
     <link>https://nodjoy.com/tags/nodejs/</link>
-    <description>Recent content in nodejs on NodJoy</description>
+    <description>Recent content in nodejs on Nodjoy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 14 Jun 2022 16:51:33 +0800</lastBuildDate><atom:link href="https://nodjoy.com/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on NodJoy</title>
+    <title>Hugo on Nodjoy</title>
     <link>https://nodjoy.com/tags/hugo/</link>
-    <description>Recent content in Hugo on NodJoy</description>
+    <description>Recent content in Hugo on Nodjoy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 10 Jul 2020 14:52:58 +0800</lastBuildDate><atom:link href="https://nodjoy.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
