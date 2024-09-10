@@ -23,6 +23,7 @@
     <link href="https://nodjoy.com/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
     <link href="https://nodjoy.com/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
     <link href="https://nodjoy.com/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="https://nodjoy.com/css/custom.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://nodjoy.com/css/govicons.min.css"/>
     <link href="https://nodjoy.com/css/syntax.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" id="hexo.configuration">
@@ -166,6 +167,12 @@
           </a>
         </li>
       
+      <li class="menu-item dy-hover" style="opacity: 1; transform: translateY(0px);">
+        <a rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tiktok"></i> <br>抖音
+        </a>
+        <img src="https://nodjoy.com/img/dy-qr.jpg" />
+        </li>
     </ul>
     
     <ul id="menu-link" class="menu menu-site menu-active">
@@ -462,49 +469,94 @@
 </div>
       
 <div class="links-of-author motion-element">
+  
+  <span class="links-of-author-item">
+    <a href="https://github.com/nodjoy" target="_blank" title="GitHub">
+      <i class="fa fa-fw fa-github"></i>
+      GitHub
+    </a>
+  </span>
+  
+  <span class="links-of-author-item">
+    <a href="https://instagram.com/gowshwah" target="_blank" title="Instagram">
+      <i class="fa fa-fw fa-instagram"></i>
+      Instagram
+    </a>
+  </span>
+  
+  <span class="links-of-author-item">
+    <a href="https://weibo.com/u/6515305531" target="_blank" title="Weibo">
+      <i class="fa fa-fw fa-weibo"></i>
+      Weibo
+    </a>
+  </span>
+  
+  <span class="links-of-author-item">
+    <a href="mailto:nodjoy@163.com" target="_blank" title="Email">
+      <i class="fa fa-fw fa-envelope"></i>
+      Email
+    </a>
+  </span>
+  
+  <span class="links-of-author-item">
+    <a href="https://b23.tv/jFlb6ip" target="_blank" title="Bilibili">
+      <i class="fa fa-fw fa-bilibili"></i>
+      Bilibili
+    </a>
+  </span>
+  
+  <span class="links-of-author-item">
+    <a href="https://bento.me/nodjoy" target="_blank" title="Bento">
+      <i class="fa fa-fw fa-arrow-up-right-from-square"></i>
+      Bento
+    </a>
+  </span>
+  
+  <span class="links-of-author-item">
+    <a title="抖音" class="dy-hover">
+      <i class="fa fa-fw fa-tiktok"></i>
+      抖音
+      <img src="https://nodjoy.com/img/dy-qr.jpg" /> 
+    </a>
+  </span>
+  <script>
     
-        <span class="links-of-author-item">
-        <a href="https://github.com/nodjoy" target="_blank" title="GitHub">
-            <i class="fa fa-fw fa-github"></i>
-            GitHub
-        </a>
-        </span>
     
-        <span class="links-of-author-item">
-        <a href="https://instagram.com/gowshwah" target="_blank" title="Instagram">
-            <i class="fa fa-fw fa-instagram"></i>
-            Instagram
-        </a>
-        </span>
     
-        <span class="links-of-author-item">
-        <a href="https://weibo.com/u/6515305531" target="_blank" title="Weibo">
-            <i class="fa fa-fw fa-weibo"></i>
-            Weibo
-        </a>
-        </span>
+
     
-        <span class="links-of-author-item">
-        <a href="mailto:nodjoy@163.com" target="_blank" title="Email">
-            <i class="fa fa-fw fa-envelope"></i>
-            Email
-        </a>
-        </span>
     
-        <span class="links-of-author-item">
-        <a href="https://b23.tv/jFlb6ip" target="_blank" title="Bilibili">
-            <i class="fa fa-fw fa-bilibili"></i>
-            Bilibili
-        </a>
-        </span>
     
-        <span class="links-of-author-item">
-        <a href="https://bento.me/nodjoy" target="_blank" title="Bento">
-            <i class="fa fa-fw fa-arrow-up-right-from-square"></i>
-            Bento
-        </a>
-        </span>
     
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    const dyHover = document.querySelector('.dy-hover');
+    const img = dyHover.querySelector('img');
+    let isImageVisible = false;
+
+    
+    dyHover.addEventListener('click', function(event) {
+      event.stopPropagation(); 
+      isImageVisible = !isImageVisible;
+      img.style.display = isImageVisible ? 'block' : 'none';
+    });
+
+    
+    document.addEventListener('click', function() {
+      if (isImageVisible) {
+        img.style.display = 'none';
+        isImageVisible = false;
+      }
+    });
+  </script>
 </div>
 
 
