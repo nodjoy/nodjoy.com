@@ -9,3 +9,6 @@
 .dy-hover:hover img{
   display: block;
 }
+.events-content{
+  height: 96px;
+}
