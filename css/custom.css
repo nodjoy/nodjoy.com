@@ -1,4 +1,4 @@
-.dy-hover img{
+.img-hover img{
   display: none;
   position:absolute;
   width: 160px;
@@ -6,9 +6,10 @@
   margin-left: 36px;
   margin-top: 2px;
 }
-.dy-hover:hover img{
+.img-hover:hover img{
   display: block;
 }
+
 .events-content{
   height: 96px;
 }

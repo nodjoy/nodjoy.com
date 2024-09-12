@@ -167,12 +167,23 @@
           </a>
         </li>
       
-      <li class="menu-item dy-hover" style="opacity: 1; transform: translateY(0px);">
+      
+      
+      <li class="menu-item img-hover wx-hover" style="opacity: 1; transform: translateY(0px);">
         <a rel="section">
-            <i class="menu-item-icon fa fa-fw fa-tiktok"></i> <br>抖音
+            <i class="menu-item-icon fa fa-fw fa-wechat"></i> <br />微信
         </a>
-        <img src="https://nodjoy.com/img/dy-qr.jpg" />
-        </li>
+        <img class="common-img-hover img-wx-hover" src="https://nodjoy.com/images/about/ll206100313.jpg" />
+      </li>
+      
+      <li class="menu-item img-hover dy-hover" style="opacity: 1; transform: translateY(0px);">
+        <a rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tiktok"></i> <br />抖音
+        </a>
+        <img class="common-img-hover img-dy-hover" src="https://nodjoy.com/img/dy-qr.jpg" />
+      </li>
+      
+      
     </ul>
     
     <ul id="menu-link" class="menu menu-site menu-active">
@@ -728,8 +739,8 @@ c. 实现原理：限制html内容的大小，让元素内容占pdf的一页，�
     <p class="site-description motion-element" itemprop="description"> 
         Developer &amp; Acceleration Engineer⏩</p>
 </div>
-      
-<div class="links-of-author motion-element">
+      <div class="links-of-author motion-element">
+  
   
   <span class="links-of-author-item">
     <a href="https://github.com/nodjoy" target="_blank" title="GitHub">
@@ -773,51 +784,26 @@ c. 实现原理：限制html内容的大小，让元素内容占pdf的一页，�
     </a>
   </span>
   
+  
+  
+  
   <span class="links-of-author-item">
-    <a title="抖音" class="dy-hover">
-      <i class="fa fa-fw fa-tiktok"></i>
-      抖音
-      <img src="https://nodjoy.com/img/dy-qr.jpg" /> 
+    <a title="微信" class="img-hover wx-hover">
+      <i class="fa fa-fw fa-wechat"></i>
+      微信
+      <img class="common-img-hover img-wx-hover" src="https://nodjoy.com/images/about/ll206100313.jpg" /> 
     </a>
   </span>
-  <script>
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    const dyHover = document.querySelector('.dy-hover');
-    const img = dyHover.querySelector('img');
-    let isImageVisible = false;
-
-    
-    dyHover.addEventListener('click', function(event) {
-      event.stopPropagation(); 
-      isImageVisible = !isImageVisible;
-      img.style.display = isImageVisible ? 'block' : 'none';
-    });
-
-    
-    document.addEventListener('click', function() {
-      if (isImageVisible) {
-        img.style.display = 'none';
-        isImageVisible = false;
-      }
-    });
-  </script>
+  
+  <span class="links-of-author-item">
+    <a title="抖音" class="img-hover dy-hover">
+      <i class="fa fa-fw fa-tiktok"></i>
+      抖音
+      <img class="common-img-hover img-dy-hover" src="https://nodjoy.com/img/dy-qr.jpg" /> 
+    </a>
+  </span>
+  
+  
 </div>
 
 
@@ -1165,6 +1151,43 @@ c. 实现原理：限制html内容的大小，让元素内容占pdf的一页，�
     container.setAttribute("class", "with-container");
     container.appendChild(i);
   }
+
+  const dyHover = document.querySelector('.dy-hover');
+  const dyImg = dyHover.querySelector('img');
+  const wxHover = document.querySelector('.wx-hover');
+  const wxImg = wxHover.querySelector('img');
+  
+  let isImageVisible = false;
+
+  
+  dyHover.addEventListener('click', function(event) {
+    wxImg.style.display = 'none';
+    event.stopPropagation(); 
+    isImageVisible = !isImageVisible;
+    dyImg.style.display = isImageVisible ? 'block' : 'none';
+  });
+
+  
+  document.addEventListener('click', function() {
+    if (isImageVisible) {
+      dyImg.style.display = 'none';
+      isImageVisible = false;
+    }
+  });
+
+  wxHover.addEventListener('click', function(event) {
+    dyImg.style.display = 'none';
+    event.stopPropagation();
+    isImageVisible = !isImageVisible;
+    wxImg.style.display = isImageVisible ? 'block' : 'none';
+  });
+
+  document.addEventListener('click', function() {
+    if (isImageVisible) {
+      wxImg.style.display = 'none';
+      isImageVisible = false;
+    }
+  });
 </script>
 
 </body>
