@@ -267,7 +267,8 @@ Name: webrtc-server Version: 1.0	Release: 1.0 Summary: webrtc-server Group: Syst
         <tags>
           <tag>Spotify</tag><tag>Musixmath</tag>
         </tags>
-        <content type="html"> Musixmath这款看歌词的软件竟然可以跨设备同步 我在iPad上使用Spotify播放音乐，在电脑上打开Musixmath软件可以同步当前Spotify上播放的音乐 幸福感拉满有木有！！ 打开Musixmath使用同一账号登录即可，Musixmath貌似支持Spotify和Apple Music 喜欢这篇文章的话 打赏一下吧！
+        <content type="html"> Musixmath 跨设备同步 在iPad上使用Spotify播放音乐，在电脑端打开 Musixmath 软件可以同步当前 Spotify 上播放的音乐
+喜欢这篇文章的话 打赏一下吧！
 </content>
     </entry>
     
