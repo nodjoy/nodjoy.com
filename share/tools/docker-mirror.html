@@ -5,23 +5,23 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>开源 | Nodjoy</title>
+    <title>DockerHub Mirror 镜像源使用说明 | Nodjoy</title>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="keywords" content="独立,博客,程序员,个人,gowshwah,开发,思考,读书,笔记,技术,分享,PHP,Nodejs,Elixir,Docker,Linux,互联网,前端,后端">
     
-    <meta property="og:title" content="开源">
+    <meta property="og:title" content="DockerHub Mirror 镜像源使用说明">
     <meta property="og:site_name" content="Nodjoy">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="开源 - Nodjoy" />
+    <meta name="title" content="DockerHub Mirror 镜像源使用说明 - Nodjoy" />
     <meta name="description" content="博客 | 软件 | 开发 | PHP | Nodejs | Elixir | Docker  | Linux | 读书 | 笔记 | 个人 | gowshwah | 独立 | 思考 | 分享 | 互联网 | 前端 | 后端"> 
     <link rel="shortcut icon" href="https://nodjoy.com/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://nodjoy.com/img/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" href="https://nodjoy.com/img/apple-touch-icon.png" />
     <link href="https://nodjoy.com/js/vendor/font-awesome/css/all.min.css" rel="stylesheet" type="text/css" />
     <link href="https://nodjoy.com/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-    
+    <link href="https://nodjoy.com/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
     <link href="https://nodjoy.com/css/main.css" rel="stylesheet" type="text/css" />
     <link href="https://nodjoy.com/css/custom.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://nodjoy.com/css/govicons.min.css"/>
@@ -31,7 +31,7 @@
 	  var CONFIG = {
 		scheme: 'Pisces',
 		sidebar: {"position":"left","display":"post"},
-		fancybox: false, 
+		 fancybox: true, 
 		motion: true
 	  };
 	</script>
@@ -48,7 +48,7 @@
 </script>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-<div class="container one-collumn sidebar-position-left   ">
+<div class="container one-collumn sidebar-position-left page-home  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -298,71 +298,173 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-<section id="posts" class="posts-collapse">
-<div class="collection-title">
-    <h2 >开源
-    <small>标签</small>
-    </h2>
-</div>
-
-<div class="collection-title">
-  <h2 class="archive-year motion-element" id="archive-year-2020">2020</h2>
-</div>
-
-  <article class="post post-type-normal }}" itemscope itemtype="http://schema.org/Article">
+<section id="posts" class="posts-expand">
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-      <h1 class="post-title">
-        <a class="post-title-link" href="https://nodjoy.com/leaf/2020/08/06/url/" itemprop="url">
-            <span itemprop="name">常 用 网 站</span>
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://nodjoy.com/share/tools/docker-mirror.html" itemprop="url">
+        DockerHub Mirror 镜像源使用说明
         </a>
       </h1>
-
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-08-06"
-              content="08-06" >
-          08-06
-        </time>
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">时间：</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2024-11-12">
+    2024-11-12
+</time>
+</span> 
+      
+
+  <span class="post-category" >
+  &nbsp; | &nbsp;
+  <span class="post-meta-item-icon">
+    <i class="fa fa-folder-o"></i>
+  </span>
+  <span class="post-meta-item-text">分类：</span>
+  
+    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+      <a href="https://nodjoy.com/categories/%E5%88%86%E4%BA%AB" itemprop="url" rel="index">
+        <span itemprop="name">分享</span>
+      </a>
+      &nbsp; 
+    </span>
+  
+</span>
+
+
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+<span class="post-meta-item-text">阅读：</span>
+<span class="leancloud-visitors-count">130 字 ~1分钟</span>
+</span>
       </div>
     </header>
+    <div class="post-body" itemprop="articleBody">
+    <h1 id="使用hubnodjoycn镜像源直接拉取">使用<code>hub.nodjoy.cn</code>镜像源直接拉取</h1>
+<h2 id="对于-dockerhub-官方镜像">对于 DockerHub 官方镜像</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker pull hub.nodjoy.cn/library/hello-world
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>docker pull hub.nodjoy.cn/library/nginx:latest
+</span></span></code></pre></div><h2 id="对于非官方镜像源">对于非官方镜像源</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker pull hub.nodjoy.cn/username/repository:tag
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 例如：</span>
+</span></span><span style="display:flex;"><span>docker pull hub.nodjoy.cn/neosmemo/memos:latest
+</span></span></code></pre></div><h1 id="通过修改-docker-配置文件使用镜像源">通过修改 Docker 配置文件使用镜像源</h1>
+<h2 id="编辑-docker-配置文件">编辑 Docker 配置文件</h2>
+<blockquote>
+<p>执行vim /etc/docker/daemon.json 命令，打开 Docker 配置文件，在文件中添加以下内容：</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;registry-mirrors&#34;</span>: [<span style="color:#e6db74">&#34;https://hub.nodjoy.cn/&#34;</span>]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="重启-docker-服务">重启 Docker 服务</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>systemctl daemon-reload
+</span></span><span style="display:flex;"><span>systemctl restart docker
+</span></span></code></pre></div><hr>
+<blockquote>
+<p>喜欢这篇文章的话 打赏一下吧！</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th><img src="https://nodjoy.com/images/pay/eb05acdaec967.png" alt="Wechat"></th>
+<th style="text-align:right"><img src="https://nodjoy.com/images/pay/0831de845.png" alt="Alipay"></th>
+</tr>
+</thead>
+</table>
+
+    </div>
+	<div class="post-comment">
+    
+    
+<span
+  id="https://nodjoy.com/share/tools/docker-mirror.html"
+  class="leancloud_visitors"
+  data-flag-title="DockerHub Mirror 镜像源使用说明"
+>
+  <p></p>
+</span>
+<div id="vcomments"></div>
+<script src="https://nodjoy.com/js/Valine.min.js"></script>
+<script type="text/javascript">
+  new Valine({
+    el: "#vcomments",
+    appId: "9iOmqWQl7wQBsarOb3o2m0eO-gzGzoHsz",
+    appKey: "U2cCMaQisH6I3GsyClKuvrwK",
+    notify: "false",
+    verify: "false",
+    avatar: "mm",
+    placeholder: "说点什么吧...",
+    visitor: "true",
+  });
+</script> 
+<script type="text/javascript">
+  
+  let vsubmit = document.getElementsByClassName("vsubmit");
+  for (var i in vsubmit) {
+    vsubmit[i].onclick = function () {
+      
+      var httpRequest = new XMLHttpRequest();
+      let barkKey = "95C7PKkV6Kxu692W6LP9YN";
+      let title = "网站有新的留言了! ";
+      let blogTitle = "文章:" + "DockerHub Mirror 镜像源使用说明 " + " \n";
+      let content =
+        "留言内容： " + document.getElementById("veditor").value + " \n";
+      let site = "链接： " + window.location.href + "  ";
+      var date = new Date();
+      let subDate = "时间： " + date.toLocaleString() + " ";
+      
+      let url =
+        "//api.day.app/" + barkKey + "/" + title + "/" + blogTitle + content;
+      httpRequest.open("GET", url, true);
+      httpRequest.send();
+    };
+  }
+</script>
+
+
+	</div>
+    <footer class="post-footer">
+     
+ 
+<div class="post-tags">     
+     
+    <a href="https://nodjoy.com/tags/docker" rel="tag" title="Docker">#Docker#</a>
+    
+</div>
+
+
+
+     <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+    
+    </div>
+
+    <div class="post-nav-prev post-nav-item">
+    
+        <a href="https://nodjoy.com/note/20240517/vm-nat.html" rel="prev" title="Proxmox虚拟机配置NAT网络">
+        Proxmox虚拟机配置NAT网络 <i class="fa fa-chevron-right"></i>
+        </a>
+    
+    </div>
+</div>
+      
+     
+     
+     
+
+
+
+
+    </footer>
   </article>
-
-
- </section>
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-  
-  
-
-
-
-<nav class="pagination">
-    
-    
-        
-        
-          <span class="page-number current">1</span>
-        
-        
-    
-    
-</nav>
-
+</section>
 
           </div>
         </div>
@@ -376,7 +478,16 @@
 <aside id="sidebar" class="sidebar">
   <div class="sidebar-inner">
 
-    <section class="site-overview sidebar-panel  sidebar-panel-active ">
+  <ul class="sidebar-nav motion-element">
+    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+      文章目录
+    </li>
+    <li class="sidebar-nav-overview" data-target="site-overview">
+      站点概览
+    </li>
+  </ul>
+
+    <section class="site-overview sidebar-panel ">
       <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image"
         src="https://nodjoy.com/img/author.jpg"
@@ -456,7 +567,7 @@
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://nodjoy.com/post/">
-        <span class="site-state-item-count">73</span>
+        <span class="site-state-item-count">74</span>
         <span class="site-state-item-name">日志</span>
       </a>
     </div>
@@ -480,13 +591,6 @@
     </div>
 </nav>
       
-<div class="feed-link motion-element">
-<a href="https://nodjoy.com/tags/%E5%BC%80%E6%BA%90/index.xml" rel="alternate" type="application/rss+xml" target="_blank">
-    <i class="fa fa-rss"></i>
-    RSS 订阅
-</a>
-</div>
-
       
 <div class="links-of-site motion-element">
     <div class="links-of-blogroll-title">
@@ -615,6 +719,22 @@
 
     </section>
     
+<section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+    <div class="post-toc">
+        <div class="post-toc-content"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#对于-dockerhub-官方镜像">对于 DockerHub 官方镜像</a></li>
+    <li><a href="#对于非官方镜像源">对于非官方镜像源</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#编辑-docker-配置文件">编辑 Docker 配置文件</a></li>
+    <li><a href="#重启-docker-服务">重启 Docker 服务</a></li>
+  </ul>
+</nav></div>
+    </div>
+</section>
+
   </div>
 </aside>
 
@@ -713,16 +833,18 @@
 ></script>
 <script src="https://nodjoy.com/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
 
+<script src="https://nodjoy.com/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+
 <script type="text/javascript" src="https://nodjoy.com/js/utils.js"></script>
 <script type="text/javascript" src="https://nodjoy.com/js/motion.js"></script>
 <script type="text/javascript" src="https://nodjoy.com/js/affix.js"></script>
 <script type="text/javascript" src="https://nodjoy.com/js/schemes/pisces.js"></script>
 
-<script type="text/javascript" src="https://nodjoy.com/js/bootstrap.js"></script>
+<script type="text/javascript" src="https://nodjoy.com/js/scrollspy.js"></script>
+<script type="text/javascript" src="https://nodjoy.com/js/post-details.js"></script>
+<script type="text/javascript" src="https://nodjoy.com/js/toc.js"></script>
 
-<script type="text/javascript" id="motion.page.archive">
-  $(".archive-year").velocity("transition.slideLeftIn");
-</script>
+<script type="text/javascript" src="https://nodjoy.com/js/bootstrap.js"></script>
 
 <script type="text/javascript" src="https://nodjoy.com/js/search.js"></script>
 <script type="text/javascript" src="https://nodjoy.com/js/moment.js"></script>

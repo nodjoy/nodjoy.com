@@ -586,19 +586,6 @@ package main import &amp;#34;fmt&amp;#34; func isSxh(n int) bool{ var i, j, k in
     </entry>
     
      <entry>
-        <title>苹果电脑MacOs系统开启允许安装外部应用</title>
-        <url>https://nodjoy.com/leaf/2020/10/26/macos01/</url>
-        <categories>
-          <category>杂记</category>
-        </categories>
-        <tags>
-          <tag>苹果电脑</tag><tag>MacOs</tag>
-        </tags>
-        <content type="html"> 打开命令行终端，键入命令 sudo spctl --master-disable 在&amp;quot;安全与隐私&amp;quot;查看开启效果 喜欢这篇文章的话 打赏一下吧！
-</content>
-    </entry>
-    
-     <entry>
         <title>php安装Oracle扩展oci8</title>
         <url>https://nodjoy.com/leaf/2020/10/26/php_oci8/</url>
         <categories>
