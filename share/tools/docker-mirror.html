@@ -219,6 +219,12 @@
         </li>
       
       <li class="menu-item ">
+        <a href="https://docker.nodjoy.cn" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />DockerHub Mirror
+          </a>
+        </li>
+      
+      <li class="menu-item ">
         <a href="https://hub.nodjoy.com" rel="section">
             <i class="menu-item-icon fa fa-fw fa-docker"></i> <br />Harbor
           </a>
@@ -341,27 +347,40 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">阅读：</span>
-<span class="leancloud-visitors-count">130 字 ~1分钟</span>
+<span class="leancloud-visitors-count">154 字 ~1分钟</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <h1 id="使用hubnodjoycn镜像源直接拉取">使用<code>hub.nodjoy.cn</code>镜像源直接拉取</h1>
+    <h1 id="镜像搜索">镜像搜索</h1>
+<blockquote>
+<ul>
+<li><strong><a href="https://docker.nodjoy.cn">docker.nodjoy.cn</a></strong></li>
+</ul>
+</blockquote>
+<h1 id="使用hubnodjoycn镜像源直接拉取">使用<code>hub.nodjoy.cn</code>镜像源直接拉取</h1>
 <h2 id="对于-dockerhub-官方镜像">对于 DockerHub 官方镜像</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker pull hub.nodjoy.cn/library/hello-world
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>docker pull hub.nodjoy.cn/library/nginx:latest
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 重命名</span>
+</span></span><span style="display:flex;"><span>docker tag hub.nodjoy.cn/library/nginx:latest nginx:latest
 </span></span></code></pre></div><h2 id="对于非官方镜像源">对于非官方镜像源</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker pull hub.nodjoy.cn/username/repository:tag
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 例如：</span>
-</span></span><span style="display:flex;"><span>docker pull hub.nodjoy.cn/neosmemo/memos:latest
+</span></span><span style="display:flex;"><span>docker pull hub.nodjoy.cn/xiaoyaliu/alist:latest
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 重命名</span>
+</span></span><span style="display:flex;"><span>docker tag hub.nodjoy.cn/xiaoyaliu/alist:latest alist:latest
 </span></span></code></pre></div><h1 id="通过修改-docker-配置文件使用镜像源">通过修改 Docker 配置文件使用镜像源</h1>
 <h2 id="编辑-docker-配置文件">编辑 Docker 配置文件</h2>
 <blockquote>
 <p>执行vim /etc/docker/daemon.json 命令，打开 Docker 配置文件，在文件中添加以下内容：</p>
 </blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;registry-mirrors&#34;</span>: [<span style="color:#e6db74">&#34;https://hub.nodjoy.cn/&#34;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;registry-mirrors&#34;</span>: [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;hub.nodjoy.cn&#34;</span>, 
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;docker.nodjoy.cn&#34;</span>
+</span></span><span style="display:flex;"><span>  ]
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h2 id="重启-docker-服务">重启 Docker 服务</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>systemctl daemon-reload
@@ -630,6 +649,13 @@
         <a href="https://download.nodjoy.com" target="_blank" title="Download Hub">
             <i class="fa fa-fw fa-download"></i>
             Download Hub
+        </a>
+        </span>
+    
+        <span class="links-of-site-item">
+        <a href="https://docker.nodjoy.cn" target="_blank" title="DockerHub Mirror">
+            <i class="fa fa-fw fa-globe"></i>
+            DockerHub Mirror
         </a>
         </span>
     
