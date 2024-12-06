@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>分享 on Nodjoy</title>
+    <link>https://nodjoy.com/categories/%E5%88%86%E4%BA%AB/</link>
+    <description>Recent content in 分享 on Nodjoy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 11 Aug 2022 20:09:34 +0800</lastBuildDate><atom:link href="https://nodjoy.com/categories/%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang与PHP的AES加密解密互转</title>
+      <link>https://nodjoy.com/share/202208/aes-lib.html</link>
+      <pubDate>Thu, 11 Aug 2022 20:09:34 +0800</pubDate>
+      
+      <guid>https://nodjoy.com/share/202208/aes-lib.html</guid>
+      <description>Golang与PHP的AES加密解密互转 使用Github上的mervick/aes-everywhere加密库 mervick/aes-eve</description>
+    </item>
+    
+    <item>
+      <title>Spotify&#43;Musixmath使用体验</title>
+      <link>https://nodjoy.com/share/202107/musixmath.html</link>
+      <pubDate>Sat, 10 Jul 2021 16:07:32 +0800</pubDate>
+      
+      <guid>https://nodjoy.com/share/202107/musixmath.html</guid>
+      <description>Musixmath 跨设备同步 在iPad上使用Spotify播放音乐，在电脑端打开 Musixmath 软件可以同步当前 Spotify 上播放的音乐 喜欢这篇文章的话 打赏一下吧！</description>
+    </item>
+    
+    <item>
+      <title>SEO搜索引擎优化-常用的站长平台总结</title>
+      <link>https://nodjoy.com/share/202101/zhanzhangurl/</link>
+      <pubDate>Fri, 15 Jan 2021 13:24:58 +0800</pubDate>
+      
+      <guid>https://nodjoy.com/share/202101/zhanzhangurl/</guid>
+      <description>百度: https://ziyuan.baidu.com 谷歌: https://analytics.google.com 腾讯: https://mta.qq.com 搜狗: http://zhanzhang.sogou.com 360: http://zhanzhang.so.com 必应: https://www.bing.com/webmasters/homepage 头条: https://zhanzhang.toutiao.com 神马: https://zhanzhang.sm.cn 喜欢这篇文章的话 打赏一下吧！</description>
+    </item>
+    
+    <item>
+      <title>常 用 网 站</title>
+      <link>https://nodjoy.com/leaf/2020/08/06/url/</link>
+      <pubDate>Thu, 06 Aug 2020 15:40:02 +0800</pubDate>
+      
+      <guid>https://nodjoy.com/leaf/2020/08/06/url/</guid>
+      <description>BootCDN BootCDN 稳定、快速、免费的前端开源项目 CDN 加速服务 AdminLTE AdminLTE 开源后台管理模板 Animate.css Animate.css CSS动画效果 Packagist Packagist The PHP Package Repository 喜欢这篇文章的话 打赏一下吧！</description>
+    </item>
+    
+    <item>
+      <title>真正的粉丝都应该会做的数学题——五点共圆</title>
+      <link>https://nodjoy.com/share/2020/07/13/knowledge01/</link>
+      <pubDate>Sun, 12 Jul 2020 17:40:40 +0800</pubDate>
+      
+      <guid>https://nodjoy.com/share/2020/07/13/knowledge01/</guid>
+      <description>作为一个合格的粉丝，只要一提到有关他的数学题，就应该想到经典的“五点共圆”。这是他1999年在澳门访问的时候访问当地一个中学时向学生提出的一</description>
+    </item>
+    
+  </channel>
+</rss>
