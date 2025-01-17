@@ -35,10 +35,10 @@
         <loc>https://nodjoy.com/tags/api/</loc>
     </url>
     <url>
-        <loc>https://nodjoy.com/tags/Spotify/</loc>
+        <loc>https://nodjoy.com/tags/spotify/</loc>
     </url>
     <url>
-        <loc>https://nodjoy.com/tags/Musixmath/</loc>
+        <loc>https://nodjoy.com/tags/musixmath/</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/tags/bbr/</loc>
@@ -47,34 +47,22 @@
         <loc>https://nodjoy.com/tags/bbr%E5%8A%A0%E9%80%9F/</loc>
     </url>
     <url>
-        <loc>https://nodjoy.com/tags/centos/</loc>
-    </url>
-    <url>
         <loc>https://nodjoy.com/tags/command/</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/tags/crontab/</loc>
     </url>
     <url>
-        <loc>https://nodjoy.com/tags/Docker/</loc>
-    </url>
-    <url>
         <loc>https://nodjoy.com/tags/docker/</loc>
     </url>
     <url>
-        <loc>https://nodjoy.com/tags/Portainer/</loc>
+        <loc>https://nodjoy.com/tags/portainer/</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/tags/firewalld/</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/tags/git/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/tags/go/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/tags/golang/</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/tags/hugo/</loc>
@@ -92,9 +80,6 @@
         <loc>https://nodjoy.com/tags/linux/</loc>
     </url>
     <url>
-        <loc>https://nodjoy.com/tags/macos/</loc>
-    </url>
-    <url>
         <loc>https://nodjoy.com/tags/mongodb/</loc>
     </url>
     <url>
@@ -107,16 +92,10 @@
         <loc>https://nodjoy.com/tags/nosql/</loc>
     </url>
     <url>
-        <loc>https://nodjoy.com/tags/npm/</loc>
-    </url>
-    <url>
         <loc>https://nodjoy.com/tags/php/</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/tags/phpstorm/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/tags/pip/</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/tags/seo/</loc>
@@ -185,6 +164,9 @@
         <loc>https://nodjoy.com/tags/rpmrebuild/</loc>
     </url>
     <url>
+        <loc>https://nodjoy.com/tags/proxmox/</loc>
+    </url>
+    <url>
         <loc>https://nodjoy.com/post/</loc>
     </url>
     <url>
@@ -195,12 +177,6 @@
     </url>
     <url>
         <loc>https://nodjoy.com/2020/07/10/hugocommand.html/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/share/2020/07/13/knowledge01/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/note/2020/07/13/vue01/</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/note/2020/07/16/laravel01/</loc>
@@ -215,25 +191,10 @@
         <loc>https://nodjoy.com/note/2020/07/23/laravel04/</loc>
     </url>
     <url>
-        <loc>https://nodjoy.com/note/2020/08/24/laravel05/</loc>
-    </url>
-    <url>
         <loc>https://nodjoy.com/leaf/2020/07/23/command1436.html/</loc>
     </url>
     <url>
-        <loc>https://nodjoy.com/note/2020/07/23/vue02/</loc>
-    </url>
-    <url>
         <loc>https://nodjoy.com/leaf/2020/07/25/npmcommand.html/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/note/2020/07/26/vue03/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/note/2020/07/27/vue04/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/note/2020/07/30/vue05/</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/note/2020/07/30/mongodb01/</loc>
@@ -242,16 +203,7 @@
         <loc>https://nodjoy.com/note/2020/07/31/laravel06/</loc>
     </url>
     <url>
-        <loc>https://nodjoy.com/note/2020/08/03/laravel07/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/note/2020/08/04/laravel08/</loc>
-    </url>
-    <url>
         <loc>https://nodjoy.com/note/2020/08/04/laravel09/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/leaf/2020/08/06/url/</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/leaf/2020/08/07/gitcommand/</loc>
@@ -261,9 +213,6 @@
     </url>
     <url>
         <loc>https://nodjoy.com/note/2020/08/09/koa02/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/note/2020/08/10/koa03/</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/note/2020/08/10/koa04/</loc>
@@ -281,46 +230,16 @@
         <loc>https://nodjoy.com/note/2020/08/20/sequelize01/</loc>
     </url>
     <url>
-        <loc>https://nodjoy.com/leaf/2020/08/21/mysql01/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/note/2020/08/24/laravel05/</loc>
-    </url>
-    <url>
         <loc>https://nodjoy.com/note/2020/09/22/laravel_dingo/</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/leaf/2020/10/26/php_oci8/</loc>
     </url>
     <url>
-        <loc>https://nodjoy.com/leaf/2020/10/26/macos01/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/note/2020/11/24/golang01/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/technology/2020/11/30/tech01/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/technology/2020/11/30/tech02/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/technology/2020/08/10/tech03/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/technology/2020/11/30/tech04/</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/note/2020/11/30/golang02/</loc>
-    </url>
-    <url>
         <loc>https://nodjoy.com/note/2020/12/11/koa_import/</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/leaf/2020/12/15/wechat01</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/leaf/2021/01/git_commit</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/note/202101/install_docker</loc>
@@ -339,9 +258,6 @@
     </url>
     <url>
         <loc>https://nodjoy.com/leaf/202101/kuaidiapi.html</loc>
-    </url>
-    <url>
-        <loc>https://nodjoy.com/leaf/202102/pip.html</loc>
     </url>
     <url>
         <loc>https://nodjoy.com/leaf/202102/bbr.html</loc>

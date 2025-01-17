@@ -35,48 +35,12 @@
     </item>
     
     <item>
-      <title>MySQL常用语句</title>
-      <link>https://nodjoy.com/leaf/2020/08/21/mysql01/</link>
-      <pubDate>Fri, 21 Aug 2020 10:37:36 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/leaf/2020/08/21/mysql01/</guid>
-      <description>表操作 修改表的存储引擎 ALTER TABLE stu engine = &amp;lsquo;InnoDB&amp;rsquo;; 清空表数据 TRUNCATE TABLE tablename; 查询 去除重复数据查询 SELECT DISTINCT class_id FROM stu; 喜欢这篇文章的话 打赏一下吧！</description>
-    </item>
-    
-    <item>
       <title>Git 版 本 控 制</title>
       <link>https://nodjoy.com/leaf/2020/08/07/gitcommand/</link>
       <pubDate>Fri, 07 Aug 2020 11:44:45 +0800</pubDate>
       
       <guid>https://nodjoy.com/leaf/2020/08/07/gitcommand/</guid>
       <description>Git基本命令 git config -l 查看配置 git config -global user.name &amp;ldquo;username&amp;rdquo; 全局设置用户名 git config -global user.email &amp;ldquo;email&amp;rdquo; 全局设置用户邮箱 git init 初始化版本库 git add a.php 添加文件到版本库 git add . 添加所有文件到版本</description>
-    </item>
-    
-    <item>
-      <title>常 用 网 站</title>
-      <link>https://nodjoy.com/leaf/2020/08/06/url/</link>
-      <pubDate>Thu, 06 Aug 2020 15:40:02 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/leaf/2020/08/06/url/</guid>
-      <description>BootCDN BootCDN 稳定、快速、免费的前端开源项目 CDN 加速服务 AdminLTE AdminLTE 开源后台管理模板 Animate.css Animate.css CSS动画效果 Packagist Packagist The PHP Package Repository 喜欢这篇文章的话 打赏一下吧！</description>
-    </item>
-    
-    <item>
-      <title>npm 版本更新</title>
-      <link>https://nodjoy.com/leaf/2020/07/25/npmcommand.html</link>
-      <pubDate>Sat, 25 Jul 2020 22:58:35 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/leaf/2020/07/25/npmcommand.html</guid>
-      <description>npm install -g npm //npm 版本更新命令（windows） 喜欢这篇文章的话 打赏一下吧！</description>
-    </item>
-    
-    <item>
-      <title>Laravel 清理缓存</title>
-      <link>https://nodjoy.com/leaf/2020/07/23/command1436.html</link>
-      <pubDate>Thu, 23 Jul 2020 14:36:43 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/leaf/2020/07/23/command1436.html</guid>
-      <description>php artisan route:clear php artisan config:cache php artisan cache:clear php artisan view:clear 喜欢这篇文章的话 打赏一下吧！</description>
     </item>
     
   </channel>

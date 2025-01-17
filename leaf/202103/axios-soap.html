@@ -360,7 +360,7 @@
     <div class="post-body" itemprop="articleBody">
     <h1 id="axios请求云之讯短信接口实现短信发送">axios请求云之讯短信接口实现短信发送</h1>
 <h2 id="安装axios">安装axios</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>    cnpm install axios --save
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>    npm install axios --save
 </span></span></code></pre></div><h2 id="方法实现">方法实现</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">static</span> <span style="color:#66d9ef">async</span> <span style="color:#a6e22e">sendMessage</span>(<span style="color:#a6e22e">ctx</span>){
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">param</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">random</span>().<span style="color:#a6e22e">toString</span>().<span style="color:#a6e22e">substr</span>(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>);  <span style="color:#75715e">//生成四位随机数
@@ -398,7 +398,7 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h1 id="soap请求webservice服务器数据">soap请求WebService服务器数据</h1>
 <h2 id="安装soap">安装soap</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>    cnpm install soap --save
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>    npm install soap --save
 </span></span></code></pre></div><h2 id="发起soap请求">发起soap请求</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">GetProjectInfo</span> () {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://digitcode.yesno.com.cn/CCNOutService/OutDigitCodeService.asmx?wsdl&#39;</span>;
@@ -431,7 +431,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">xmlReply</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">resultProductInfo</span>.<span style="color:#a6e22e">reply</span>;
 </span></span></code></pre></div><h2 id="解析xml数据">解析Xml数据</h2>
 <h3 id="安装xmlreader">安装xmlreader</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    cnpm install xmlreader --save
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    npm install xmlreader --save
 </span></span></code></pre></div><h3 id="xml数据转json对象实现">xml数据转json对象实现</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">XmlToJson</span> (<span style="color:#a6e22e">xmlString</span>) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise(<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">result</span>){
@@ -667,7 +667,7 @@
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://nodjoy.com/post/">
-        <span class="site-state-item-count">73</span>
+        <span class="site-state-item-count">52</span>
         <span class="site-state-item-name">日志</span>
       </a>
     </div>
@@ -684,7 +684,7 @@
     <div class="site-state-item site-state-tags">
         <a href="https://nodjoy.com/tags/">
          
-        <span class="site-state-item-count">77</span>
+        <span class="site-state-item-count">64</span>
         
         <span class="site-state-item-name">标签</span>
         </a>

@@ -13,7 +13,7 @@
       <pubDate>Wed, 10 Mar 2021 11:24:18 +0800</pubDate>
       
       <guid>https://nodjoy.com/leaf/202103/axios-soap.html</guid>
-      <description>axios请求云之讯短信接口实现短信发送 安装axios cnpm install axios --save 方法实现 static async sendMessage(ctx){ let param = Math.random().toString().substr(2, 4); //生成四位随机数 let phone = &amp;#39;157********&amp;#39;; const url = &amp;#39;https://open.ucpaas.com/ol/sms/sendsms&amp;#39;; const axios = require(&amp;#39;axios&amp;#39;); let sendRe = await axios({ method:</description>
+      <description>axios请求云之讯短信接口实现短信发送 安装axios npm install axios --save 方法实现 static async sendMessage(ctx){ let param = Math.random().toString().substr(2, 4); //生成四位随机数 let phone = &amp;#39;157********&amp;#39;; const url = &amp;#39;https://open.ucpaas.com/ol/sms/sendsms&amp;#39;; const axios = require(&amp;#39;axios&amp;#39;); let sendRe = await axios({ method:</description>
     </item>
     
     <item>

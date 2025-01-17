@@ -2599,6 +2599,7 @@ body {
   width: 240px;
   color: #555;
   background: #fff;
+  overflow-y: auto;
 }
 .sidebar-inner.affix {
   position: fixed;

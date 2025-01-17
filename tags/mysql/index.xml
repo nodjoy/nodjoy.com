@@ -16,14 +16,5 @@
       <description>环境 使用的环境是Windows10+homestead(VirtualBox) 启动过程 运行sudo docker-compose up -d 容器可以正常启动 运行sudo docker exec -it db-mysql</description>
     </item>
     
-    <item>
-      <title>MySQL常用语句</title>
-      <link>https://nodjoy.com/leaf/2020/08/21/mysql01/</link>
-      <pubDate>Fri, 21 Aug 2020 10:37:36 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/leaf/2020/08/21/mysql01/</guid>
-      <description>表操作 修改表的存储引擎 ALTER TABLE stu engine = &amp;lsquo;InnoDB&amp;rsquo;; 清空表数据 TRUNCATE TABLE tablename; 查询 去除重复数据查询 SELECT DISTINCT class_id FROM stu; 喜欢这篇文章的话 打赏一下吧！</description>
-    </item>
-    
   </channel>
 </rss>

@@ -98,39 +98,12 @@
     </item>
     
     <item>
-      <title>Laravel&amp;QQ邮箱实现邮件发送</title>
-      <link>https://nodjoy.com/note/2020/08/04/laravel08/</link>
-      <pubDate>Tue, 04 Aug 2020 11:16:11 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/2020/08/04/laravel08/</guid>
-      <description>配置.env文件中的邮件部分 MAIL_DRIVER=smtp MAIL_HOST=smtp.qq.com MAIL_PORT=25 MAIL_USERNAME=1099764281@qq.com MAIL_PASSWORD=tmd****** //QQ邮箱授权码 MAIL_ENCRYPTION=tls MAIL_FROM_ADDRESS=1099764281@qq.com MAIL_FROM_NAME=1099764281 新建邮件发送策略 php artisan make:mail RegMail 邮件发送方法 use App\Mail\RegMail; public function sendMail() { $user = User::find(1); \Mail::to($user)-&amp;gt;send(new RegMail()); return redirect(&amp;#39;/&amp;#39;); } 喜欢这篇文章的</description>
-    </item>
-    
-    <item>
-      <title>Laravel登录注册Auth验证及使用Policy模型策略管理用户权限</title>
-      <link>https://nodjoy.com/note/2020/08/03/laravel07/</link>
-      <pubDate>Mon, 03 Aug 2020 20:18:44 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/2020/08/03/laravel07/</guid>
-      <description>路由routes/web.php Route::get(&amp;#39;/&amp;#39;, function () { return view(&amp;#39;welcome&amp;#39;); }); //user资源 Route::resource(&amp;#39;user&amp;#39;,&amp;#39;UserController&amp;#39;); //退出路由 Route::get(&amp;#39;logout&amp;#39;,&amp;#39;LoginController@logout&amp;#39;)-&amp;gt;name(&amp;#39;logout&amp;#39;); //登录路由 Route::get(&amp;#39;login&amp;#39;,&amp;#39;LoginController@login&amp;#39;)-&amp;gt;name(&amp;#39;login&amp;#39;); //登录处理 Route::post(&amp;#39;login&amp;#39;,&amp;#39;LoginController@store&amp;#39;)-&amp;gt;name(&amp;#39;login&amp;#39;); 登录控制器LoginControl</description>
-    </item>
-    
-    <item>
       <title>Laravel Api开发之laravel/passport授权包的使用及基本配置</title>
       <link>https://nodjoy.com/note/2020/07/31/laravel06/</link>
       <pubDate>Fri, 31 Jul 2020 17:18:54 +0800</pubDate>
       
       <guid>https://nodjoy.com/note/2020/07/31/laravel06/</guid>
       <description>安装laravel/passport composer require laravel/passport=~7.0 指定为7.0版本，laravel5.8不支持8.0及以上版本 创建所需的表 php artisan migrate 生成secret php artisan</description>
-    </item>
-    
-    <item>
-      <title>Laravel 清理缓存</title>
-      <link>https://nodjoy.com/leaf/2020/07/23/command1436.html</link>
-      <pubDate>Thu, 23 Jul 2020 14:36:43 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/leaf/2020/07/23/command1436.html</guid>
-      <description>php artisan route:clear php artisan config:cache php artisan cache:clear php artisan view:clear 喜欢这篇文章的话 打赏一下吧！</description>
     </item>
     
     <item>

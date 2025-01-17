@@ -13,7 +13,7 @@
       <pubDate>Wed, 10 Mar 2021 11:24:18 +0800</pubDate>
       
       <guid>https://nodjoy.com/leaf/202103/axios-soap.html</guid>
-      <description>axios请求云之讯短信接口实现短信发送 安装axios cnpm install axios --save 方法实现 static async sendMessage(ctx){ let param = Math.random().toString().substr(2, 4); //生成四位随机数 let phone = &amp;#39;157********&amp;#39;; const url = &amp;#39;https://open.ucpaas.com/ol/sms/sendsms&amp;#39;; const axios = require(&amp;#39;axios&amp;#39;); let sendRe = await axios({ method:</description>
+      <description>axios请求云之讯短信接口实现短信发送 安装axios npm install axios --save 方法实现 static async sendMessage(ctx){ let param = Math.random().toString().substr(2, 4); //生成四位随机数 let phone = &amp;#39;157********&amp;#39;; const url = &amp;#39;https://open.ucpaas.com/ol/sms/sendsms&amp;#39;; const axios = require(&amp;#39;axios&amp;#39;); let sendRe = await axios({ method:</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Fri, 11 Dec 2020 17:29:57 +0800</pubDate>
       
       <guid>https://nodjoy.com/note/2020/12/11/koa_import/</guid>
-      <description>安装引入excel-export包 cnpm install excel-export --save const nodeExcel = require(&amp;#39;excel-export&amp;#39;); 实现导出方法 /** * 数据导出--导出方法 * @param resultData [{},{},] //从数据库中获取的数据格式 */ static async exportData(resultData,ctx){ let conf ={}; conf.name =</description>
+      <description>安装引入excel-export包 npm install excel-export --save const nodeExcel = require(&amp;#39;excel-export&amp;#39;); 实现导出方法 /** * 数据导出--导出方法 * @param resultData [{},{},] //从数据库中获取的数据格式 */ static async exportData(resultData,ctx){ let conf ={}; conf.name =</description>
     </item>
     
     <item>
@@ -40,7 +40,7 @@
       <pubDate>Thu, 20 Aug 2020 14:00:54 +0800</pubDate>
       
       <guid>https://nodjoy.com/note/2020/08/20/sequelize01/</guid>
-      <description>安装sequelize、sequelize-cli和mysql2 cnpm install sequelize-cli -g cnpm install sequelize --save cnpm install mysql2 --save 初始化项目 sequelize init 在config.js中配置连接数据库参</description>
+      <description>安装sequelize、sequelize-cli和mysql2 npm install sequelize-cli -g npm install sequelize --save npm install mysql2 --save 初始化项目 sequelize init 在config.js中配置连接数据库参</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@
       <pubDate>Mon, 10 Aug 2020 16:48:12 +0800</pubDate>
       
       <guid>https://nodjoy.com/note/2020/08/10/koa06/</guid>
-      <description>全局安装koa脚手架生成工具 cnpm install koa-generator -g 创建项目 koa koa_demo 安装依赖 cd koa_demo cnpm install 启动项目 npm start 喜欢这篇文章的话 打赏一下吧！</description>
+      <description>全局安装koa脚手架生成工具 npm install koa-generator -g 创建项目 koa koa_demo 安装依赖 cd koa_demo npm install 启动项目 npm start 喜欢这篇文章的话 打赏一下吧！</description>
     </item>
     
     <item>
@@ -80,21 +80,12 @@
     </item>
     
     <item>
-      <title>Koa ejs模板引擎与art-template模板引擎</title>
-      <link>https://nodjoy.com/note/2020/08/10/koa03/</link>
-      <pubDate>Mon, 10 Aug 2020 10:19:42 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/2020/08/10/koa03/</guid>
-      <description>Koa ejs的安装与使用 安装koa-views cnpm install koa-views --save 安装ejs cnpm install ejs --save 配置模板引擎中间件 var views = require(&amp;#39;koa-views&amp;#39;); app.use(views(&amp;#39;views&amp;#39;,{ extension:&amp;#39;ejs&amp;#39; })); //这样配置模板的后缀名是.ejs //第</description>
-    </item>
-    
-    <item>
       <title>Koa路由和中间件</title>
       <link>https://nodjoy.com/note/2020/08/09/koa02/</link>
       <pubDate>Sun, 09 Aug 2020 11:01:49 +0800</pubDate>
       
       <guid>https://nodjoy.com/note/2020/08/09/koa02/</guid>
-      <description>Koa路由的安装和配置 安装Koa路由 cnpm install koa-router --save Koa路由的使用 var Koa = require(&amp;#39;koa&amp;#39;); //引入Koa var Router = require(&amp;#39;koa-router&amp;#39;); //引入路由 var app = new Koa(); var router = new Router(); //配置路由 router.get(&amp;#39;/&amp;#39;,async function(ctx){ //ctx</description>
+      <description>Koa路由的安装和配置 安装Koa路由 npm install koa-router --save Koa路由的使用 var Koa = require(&amp;#39;koa&amp;#39;); //引入Koa var Router = require(&amp;#39;koa-router&amp;#39;); //引入路由 var app = new Koa(); var router = new Router(); //配置路由 router.get(&amp;#39;/&amp;#39;,async function(ctx){ //ctx</description>
     </item>
     
     <item>
@@ -103,7 +94,7 @@
       <pubDate>Sun, 09 Aug 2020 08:59:12 +0800</pubDate>
       
       <guid>https://nodjoy.com/note/2020/08/09/koa01/</guid>
-      <description>安装Koa框架 初始化 npm init --yes 安装Koa cnpm install koa --save 第一个Koa程序app.js var Koa = require(&amp;#39;koa&amp;#39;); //引入Koa var app = new Koa(); //实例化 //中间件 app.use(async(ctx)=&amp;gt;{ ctx.body=&amp;#39;Hello Koa&amp;#39;; }); app.listen(3000); ES6</description>
+      <description>安装Koa框架 初始化 npm init --yes 安装Koa npm install koa --save 第一个Koa程序app.js var Koa = require(&amp;#39;koa&amp;#39;); //引入Koa var app = new Koa(); //实例化 //中间件 app.use(async(ctx)=&amp;gt;{ ctx.body=&amp;#39;Hello Koa&amp;#39;; }); app.listen(3000); ES6</description>
     </item>
     
   </channel>

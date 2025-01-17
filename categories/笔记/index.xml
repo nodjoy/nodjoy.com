@@ -125,39 +125,12 @@
     </item>
     
     <item>
-      <title>Linux-CentOS上Docker的安装与卸载</title>
-      <link>https://nodjoy.com/note/202101/install_docker/</link>
-      <pubDate>Wed, 06 Jan 2021 14:42:00 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/202101/install_docker/</guid>
-      <description>通过uname -r 命令查看Linux内核版本 uname -r //Docker 要求 CentOS 系统的内核版本高于 3.10 确保yum包更新到最新 yum update 安装需要的软件包 yum install -y yum-utils device-mapper-persistent-data lvm2 //yum-util 提供yum</description>
-    </item>
-    
-    <item>
       <title>Koa框架实现导出Excel文件</title>
       <link>https://nodjoy.com/note/2020/12/11/koa_import/</link>
       <pubDate>Fri, 11 Dec 2020 17:29:57 +0800</pubDate>
       
       <guid>https://nodjoy.com/note/2020/12/11/koa_import/</guid>
-      <description>安装引入excel-export包 cnpm install excel-export --save const nodeExcel = require(&amp;#39;excel-export&amp;#39;); 实现导出方法 /** * 数据导出--导出方法 * @param resultData [{},{},] //从数据库中获取的数据格式 */ static async exportData(resultData,ctx){ let conf ={}; conf.name =</description>
-    </item>
-    
-    <item>
-      <title>Go-strings和strconv函数的使用</title>
-      <link>https://nodjoy.com/note/2020/11/30/golang02/</link>
-      <pubDate>Mon, 30 Nov 2020 17:57:04 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/2020/11/30/golang02/</guid>
-      <description>strings.HasPrefix(s string, prefix string) bool :判断字符串s是否以prefix开头 例：判断一个url是否以http://开头，如果不是则加上http:// func urlProcess(url string) string { result := strings.HasPrefix(url, &amp;#34;http://&amp;#34;) if !result</description>
-    </item>
-    
-    <item>
-      <title>Go语言基础01</title>
-      <link>https://nodjoy.com/note/2020/11/24/golang01/</link>
-      <pubDate>Tue, 24 Nov 2020 15:28:20 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/2020/11/24/golang01/</guid>
-      <description>Golang语言特性 垃圾回收 内存自动回收，不需要开发人员管理内存 开发人员基本只专注业务实现 只需要new分配内存，无需释放 天然并发 从语言层面支</description>
+      <description>安装引入excel-export包 npm install excel-export --save const nodeExcel = require(&amp;#39;excel-export&amp;#39;); 实现导出方法 /** * 数据导出--导出方法 * @param resultData [{},{},] //从数据库中获取的数据格式 */ static async exportData(resultData,ctx){ let conf ={}; conf.name =</description>
     </item>
     
     <item>
@@ -179,21 +152,12 @@
     </item>
     
     <item>
-      <title>MySQL常用语句</title>
-      <link>https://nodjoy.com/leaf/2020/08/21/mysql01/</link>
-      <pubDate>Fri, 21 Aug 2020 10:37:36 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/leaf/2020/08/21/mysql01/</guid>
-      <description>表操作 修改表的存储引擎 ALTER TABLE stu engine = &amp;lsquo;InnoDB&amp;rsquo;; 清空表数据 TRUNCATE TABLE tablename; 查询 去除重复数据查询 SELECT DISTINCT class_id FROM stu; 喜欢这篇文章的话 打赏一下吧！</description>
-    </item>
-    
-    <item>
       <title>Sequelize操作MySQL数据库</title>
       <link>https://nodjoy.com/note/2020/08/20/sequelize01/</link>
       <pubDate>Thu, 20 Aug 2020 14:00:54 +0800</pubDate>
       
       <guid>https://nodjoy.com/note/2020/08/20/sequelize01/</guid>
-      <description>安装sequelize、sequelize-cli和mysql2 cnpm install sequelize-cli -g cnpm install sequelize --save cnpm install mysql2 --save 初始化项目 sequelize init 在config.js中配置连接数据库参</description>
+      <description>安装sequelize、sequelize-cli和mysql2 npm install sequelize-cli -g npm install sequelize --save npm install mysql2 --save 初始化项目 sequelize init 在config.js中配置连接数据库参</description>
     </item>
     
     <item>
@@ -211,7 +175,7 @@
       <pubDate>Mon, 10 Aug 2020 16:48:12 +0800</pubDate>
       
       <guid>https://nodjoy.com/note/2020/08/10/koa06/</guid>
-      <description>全局安装koa脚手架生成工具 cnpm install koa-generator -g 创建项目 koa koa_demo 安装依赖 cd koa_demo cnpm install 启动项目 npm start 喜欢这篇文章的话 打赏一下吧！</description>
+      <description>全局安装koa脚手架生成工具 npm install koa-generator -g 创建项目 koa koa_demo 安装依赖 cd koa_demo npm install 启动项目 npm start 喜欢这篇文章的话 打赏一下吧！</description>
     </item>
     
     <item>
@@ -233,21 +197,12 @@
     </item>
     
     <item>
-      <title>Koa ejs模板引擎与art-template模板引擎</title>
-      <link>https://nodjoy.com/note/2020/08/10/koa03/</link>
-      <pubDate>Mon, 10 Aug 2020 10:19:42 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/2020/08/10/koa03/</guid>
-      <description>Koa ejs的安装与使用 安装koa-views cnpm install koa-views --save 安装ejs cnpm install ejs --save 配置模板引擎中间件 var views = require(&amp;#39;koa-views&amp;#39;); app.use(views(&amp;#39;views&amp;#39;,{ extension:&amp;#39;ejs&amp;#39; })); //这样配置模板的后缀名是.ejs //第</description>
-    </item>
-    
-    <item>
       <title>Koa路由和中间件</title>
       <link>https://nodjoy.com/note/2020/08/09/koa02/</link>
       <pubDate>Sun, 09 Aug 2020 11:01:49 +0800</pubDate>
       
       <guid>https://nodjoy.com/note/2020/08/09/koa02/</guid>
-      <description>Koa路由的安装和配置 安装Koa路由 cnpm install koa-router --save Koa路由的使用 var Koa = require(&amp;#39;koa&amp;#39;); //引入Koa var Router = require(&amp;#39;koa-router&amp;#39;); //引入路由 var app = new Koa(); var router = new Router(); //配置路由 router.get(&amp;#39;/&amp;#39;,async function(ctx){ //ctx</description>
+      <description>Koa路由的安装和配置 安装Koa路由 npm install koa-router --save Koa路由的使用 var Koa = require(&amp;#39;koa&amp;#39;); //引入Koa var Router = require(&amp;#39;koa-router&amp;#39;); //引入路由 var app = new Koa(); var router = new Router(); //配置路由 router.get(&amp;#39;/&amp;#39;,async function(ctx){ //ctx</description>
     </item>
     
     <item>
@@ -256,7 +211,7 @@
       <pubDate>Sun, 09 Aug 2020 08:59:12 +0800</pubDate>
       
       <guid>https://nodjoy.com/note/2020/08/09/koa01/</guid>
-      <description>安装Koa框架 初始化 npm init --yes 安装Koa cnpm install koa --save 第一个Koa程序app.js var Koa = require(&amp;#39;koa&amp;#39;); //引入Koa var app = new Koa(); //实例化 //中间件 app.use(async(ctx)=&amp;gt;{ ctx.body=&amp;#39;Hello Koa&amp;#39;; }); app.listen(3000); ES6</description>
+      <description>安装Koa框架 初始化 npm init --yes 安装Koa npm install koa --save 第一个Koa程序app.js var Koa = require(&amp;#39;koa&amp;#39;); //引入Koa var app = new Koa(); //实例化 //中间件 app.use(async(ctx)=&amp;gt;{ ctx.body=&amp;#39;Hello Koa&amp;#39;; }); app.listen(3000); ES6</description>
     </item>
     
     <item>
@@ -266,24 +221,6 @@
       
       <guid>https://nodjoy.com/note/2020/08/04/laravel09/</guid>
       <description>注册数据处理方法中添加token并触发邮件发送 //用户注册数据处理 public function store(Request $request) { $data = $this-&amp;gt;validate($request,[ &amp;#39;name&amp;#39; =&amp;gt; &amp;#39;required|min:4&amp;#39;, &amp;#39;email&amp;#39; =&amp;gt; &amp;#39;required|email|unique:users&amp;#39;, &amp;#39;password&amp;#39; =&amp;gt; &amp;#39;required|min:6|confirmed&amp;#39;, ]); $data[&amp;#39;password&amp;#39;] = bcrypt($data[&amp;#39;password&amp;#39;]); $data[&amp;#39;email_token&amp;#39;] = Str::random(10); $user = User::create($data); //发送注册邮件 \Mail::to($user)-&amp;gt;send(new RegMail($user));</description>
-    </item>
-    
-    <item>
-      <title>Laravel&amp;QQ邮箱实现邮件发送</title>
-      <link>https://nodjoy.com/note/2020/08/04/laravel08/</link>
-      <pubDate>Tue, 04 Aug 2020 11:16:11 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/2020/08/04/laravel08/</guid>
-      <description>配置.env文件中的邮件部分 MAIL_DRIVER=smtp MAIL_HOST=smtp.qq.com MAIL_PORT=25 MAIL_USERNAME=1099764281@qq.com MAIL_PASSWORD=tmd****** //QQ邮箱授权码 MAIL_ENCRYPTION=tls MAIL_FROM_ADDRESS=1099764281@qq.com MAIL_FROM_NAME=1099764281 新建邮件发送策略 php artisan make:mail RegMail 邮件发送方法 use App\Mail\RegMail; public function sendMail() { $user = User::find(1); \Mail::to($user)-&amp;gt;send(new RegMail()); return redirect(&amp;#39;/&amp;#39;); } 喜欢这篇文章的</description>
-    </item>
-    
-    <item>
-      <title>Laravel登录注册Auth验证及使用Policy模型策略管理用户权限</title>
-      <link>https://nodjoy.com/note/2020/08/03/laravel07/</link>
-      <pubDate>Mon, 03 Aug 2020 20:18:44 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/2020/08/03/laravel07/</guid>
-      <description>路由routes/web.php Route::get(&amp;#39;/&amp;#39;, function () { return view(&amp;#39;welcome&amp;#39;); }); //user资源 Route::resource(&amp;#39;user&amp;#39;,&amp;#39;UserController&amp;#39;); //退出路由 Route::get(&amp;#39;logout&amp;#39;,&amp;#39;LoginController@logout&amp;#39;)-&amp;gt;name(&amp;#39;logout&amp;#39;); //登录路由 Route::get(&amp;#39;login&amp;#39;,&amp;#39;LoginController@login&amp;#39;)-&amp;gt;name(&amp;#39;login&amp;#39;); //登录处理 Route::post(&amp;#39;login&amp;#39;,&amp;#39;LoginController@store&amp;#39;)-&amp;gt;name(&amp;#39;login&amp;#39;); 登录控制器LoginControl</description>
     </item>
     
     <item>
@@ -302,42 +239,6 @@
       
       <guid>https://nodjoy.com/note/2020/07/30/mongodb01/</guid>
       <description>安装配置（with WAMP） 下载MongoDB，并将安装包移动到wamp环境目录下 在mongodb目录新建log.txt文件和dat文件目录</description>
-    </item>
-    
-    <item>
-      <title>Vue基础-05</title>
-      <link>https://nodjoy.com/note/2020/07/30/vue05/</link>
-      <pubDate>Thu, 30 Jul 2020 11:17:51 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/2020/07/30/vue05/</guid>
-      <description>使用Vue-cli初始化单页面应用 使用npm或cnpm安装 vue-cli cnpm install -g vue-cli 使用vue命令安装项目包 vue init webpack cli 安装vue-route时选Yes,其他都</description>
-    </item>
-    
-    <item>
-      <title>Vue基础-04</title>
-      <link>https://nodjoy.com/note/2020/07/27/vue04/</link>
-      <pubDate>Mon, 27 Jul 2020 16:15:11 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/2020/07/27/vue04/</guid>
-      <description>Vue声明组件(component)的方式 &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;live-slide&amp;gt;&amp;lt;/live-slide&amp;gt; &amp;lt;live-news&amp;gt;&amp;lt;/live-news&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; //全局组件 Vue.component(&amp;#39;liveSlide&amp;#39;,{ template:&amp;#39;&amp;lt;h2&amp;gt;nodjoy.com&amp;lt;/h2&amp;gt;&amp;#39; }); //局部组件 var liveNews = { template:&amp;#34;&amp;lt;h2&amp;gt;NodJoy&amp;lt;/h2&amp;gt;&amp;#34; }; var app = new Vue({ el:&amp;#39;#app&amp;#39;, components:{liveNews}, data:{ }, }); &amp;lt;/script&amp;gt; 子组件中data返回数</description>
-    </item>
-    
-    <item>
-      <title>Vue基础-03</title>
-      <link>https://nodjoy.com/note/2020/07/26/vue03/</link>
-      <pubDate>Sun, 26 Jul 2020 22:01:50 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/2020/07/26/vue03/</guid>
-      <description>表单提交与prevent操作表单 &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;form action=&amp;#34;&amp;#34; @submit.prevent=&amp;#34;post(&amp;#39;nodjoy.com&amp;#39;)&amp;#34;&amp;gt; &amp;lt;h2&amp;gt;{{times}}&amp;lt;/h2&amp;gt; &amp;lt;button&amp;gt;提交&amp;lt;/button&amp;gt; &amp;lt;/form&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; var app = new Vue({ el:&amp;#39;#app&amp;#39;, data: { times:new Date() }, methods:{ post(num){ alert(num);</description>
-    </item>
-    
-    <item>
-      <title>Vue基础-02</title>
-      <link>https://nodjoy.com/note/2020/07/23/vue02/</link>
-      <pubDate>Thu, 23 Jul 2020 17:32:32 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/2020/07/23/vue02/</guid>
-      <description>使用object与array控制class &amp;lt;style&amp;gt; .font{font-size: 20px} .color{color: skyblue} .red{color: red} &amp;lt;/style&amp;gt; &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;h2 :class=&amp;#34;obj&amp;#34;&amp;gt;Vue Object&amp;lt;/h2&amp;gt; &amp;lt;hr/&amp;gt; &amp;lt;h2 :class=&amp;#34;[succ,font]&amp;#34;&amp;gt;nodjoy.com&amp;lt;/h2&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; var app = new Vue({ el:&amp;#39;#app&amp;#39;, data:{ obj:{color:true,font:true}, //对象形式 //数组形式 succ:&amp;#39;red&amp;#39;, font:&amp;#39;font&amp;#39; } }); &amp;lt;/script&amp;gt; 使用clas</description>
     </item>
     
     <item>
@@ -374,15 +275,6 @@
       
       <guid>https://nodjoy.com/note/2020/07/16/laravel01/</guid>
       <description>安装 composer安装 composer命令： composer create-project --prefer-dist laravel/laravel hd Laravel目录： 安装提示工具 前往PHP应用商店packagist.org下载安装</description>
-    </item>
-    
-    <item>
-      <title>Vue基础-01</title>
-      <link>https://nodjoy.com/note/2020/07/13/vue01/</link>
-      <pubDate>Mon, 13 Jul 2020 14:57:32 +0800</pubDate>
-      
-      <guid>https://nodjoy.com/note/2020/07/13/vue01/</guid>
-      <description>v-if与v-show v-if：不显示时，第一次就直接不渲染，如果内容已经显示将其改为不显示，将内容直接从DOM去除。只渲染一次的内容用v-</description>
     </item>
     
     <item>
