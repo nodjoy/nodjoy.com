@@ -9,9 +9,11 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
+    <meta name="author" content="Gowshwah">
+    <meta name="copyright" content="Gowshwah">
     <meta name="keywords" content="独立,博客,程序员,个人,gowshwah,开发,思考,读书,笔记,技术,分享,PHP,Nodejs,Elixir,Docker,Linux,互联网,前端,后端">
-    
     <meta property="og:title" content="Ubuntu搭建LNMP环境">
+    <meta property="og:url" content="https://nodjoy.com/">
     <meta property="og:site_name" content="Nodjoy">
     <meta property="og:image" content="/img/author.jpg"> 
     <meta name="title" content="Ubuntu搭建LNMP环境 - Nodjoy" />
@@ -55,7 +57,7 @@
       <div class="header-inner"> <div class="site-meta  custom-logo ">
 
   <div class="custom-logo-site-title">
-    <a href="https://nodjoy.com"  class="brand" rel="start">
+    <a href="https://nodjoy.com/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <span class="site-title">Nodjoy</span>
       <span class="logo-line-after"><i></i></span>
@@ -353,7 +355,7 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">阅读：</span>
-<span class="leancloud-visitors-count">347 字 ~1分钟</span>
+<span class="leancloud-visitors-count">351 字 ~1分钟</span>
 </span>
       </div>
     </header>
@@ -369,9 +371,9 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    deb https://launchpad.proxy.ustclug.org/ondrej/php/ubuntu focal main
 </span></span></code></pre></div><h1 id="安装php">安装PHP</h1>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    sudo apt install php7.4
-</span></span><span style="display:flex;"><span>    sudo apt install php-fpm7.4
+</span></span><span style="display:flex;"><span>    sudo apt install php7.4-fpm
 </span></span></code></pre></div><h1 id="安装php扩展">安装PHP扩展</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    sudo apt install php7.4-xml php7.4-json php7.4-mysql php7.4-curl php7.4-gd php7.4-pdo php7.4-mbstring php7.4-mysqlnd  
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    sudo apt install php7.4-xml php7.4-json php7.4-mysql php7.4-curl php7.4-gd php7.4-pdo php7.4-mbstring php7.4-mysqlnd php7.4-bcmath php7.4-zip php7.4-fileinfo php7.4-redis
 </span></span></code></pre></div><h1 id="设置mysql用户名密码">设置MySQL用户名密码</h1>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    #查看初始用户名和密码
 </span></span><span style="display:flex;"><span>    cd /etc/mysql
@@ -390,7 +392,7 @@
 <h2 id="进入etcnginxconfd目录">进入/etc/nginx/conf.d目录</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    cd /etc/nginx/conf.d
 </span></span></code></pre></div><h2 id="新建站点配置">新建站点配置</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    sudo vi mysite.com
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    sudo vi mysite.com.conf
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>    server {
 </span></span><span style="display:flex;"><span>        listen 80;
 </span></span><span style="display:flex;"><span>        listen 443 ssl http2;
@@ -400,7 +402,7 @@
 </span></span><span style="display:flex;"><span>        index index.html index.htm index.php;
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>        charset utf-8;
-</span></span><span style="display:flex;"><span>        client_max_body_size 100M;
+</span></span><span style="display:flex;"><span>        client_max_body_size 1000M;
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>        location / {
 </span></span><span style="display:flex;"><span>            if (!-e $request_filename) {
@@ -418,9 +420,9 @@
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span>        sendfile off;
 </span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>        location ~ \.php$ {
+</span></span><span style="display:flex;"><span>        location ~ \.php(.*)$ {
 </span></span><span style="display:flex;"><span>            fastcgi_split_path_info ^(.+\.php)(/.+)$;
-</span></span><span style="display:flex;"><span>            fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+</span></span><span style="display:flex;"><span>            fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
 </span></span><span style="display:flex;"><span>            fastcgi_index index.php;
 </span></span><span style="display:flex;"><span>            include fastcgi_params;
 </span></span><span style="display:flex;"><span>            fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
