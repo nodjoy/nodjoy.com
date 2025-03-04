@@ -9,9 +9,11 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
+    <meta name="author" content="Gowshwah">
+    <meta name="copyright" content="Gowshwah">
     <meta name="keywords" content="独立,博客,程序员,个人,gowshwah,开发,思考,读书,笔记,技术,分享,PHP,Nodejs,Elixir,Docker,Linux,互联网,前端,后端">
-    
     <meta property="og:title" content="DockerHub Mirror 镜像源使用说明">
+    <meta property="og:url" content="https://nodjoy.com/">
     <meta property="og:site_name" content="Nodjoy">
     <meta property="og:image" content="/img/author.jpg"> 
     <meta name="title" content="DockerHub Mirror 镜像源使用说明 - Nodjoy" />
@@ -55,7 +57,7 @@
       <div class="header-inner"> <div class="site-meta  custom-logo ">
 
   <div class="custom-logo-site-title">
-    <a href="https://nodjoy.com"  class="brand" rel="start">
+    <a href="https://nodjoy.com/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <span class="site-title">Nodjoy</span>
       <span class="logo-line-after"><i></i></span>
@@ -353,7 +355,7 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">阅读：</span>
-<span class="leancloud-visitors-count">297 字 ~1分钟</span>
+<span class="leancloud-visitors-count">265 字 ~1分钟</span>
 </span>
       </div>
     </header>
@@ -395,12 +397,14 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker pull ghcr.nodjoy.cn/username/repository:tag
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># 例如：</span>
 </span></span><span style="display:flex;"><span>docker pull ghcr.nodjoy.cn/mailu/nginx:latest
-</span></span></code></pre></div><h2 id="gcrio镜像源拉取"><code>gcr.io</code>镜像源拉取</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker pull gcr.nodjoy.cn/username/repository:tag
-</span></span></code></pre></div><h2 id="registryk8sio镜像源拉取"><code>registry.k8s.io</code>镜像源拉取</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker pull k8s.nodjoy.cn/username/repository:tag
-</span></span></code></pre></div><h2 id="k8sgcrio镜像源拉取"><code>k8s.gcr.io</code>镜像源拉取</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker pull k8s-gcr.nodjoy.cn/username/repository:tag
+</span></span></code></pre></div><h2 id="其他">其他</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>quay.nodjoy.cn -&gt; quay.io
+</span></span><span style="display:flex;"><span>gcr.nodjoy.cn -&gt; gcr.io
+</span></span><span style="display:flex;"><span>k8s-gcr.nodjoy.cn -&gt; k8s.gcr.io
+</span></span><span style="display:flex;"><span>k8s.nodjoy.cn -&gt; registry.k8s.io
+</span></span><span style="display:flex;"><span>ghcr.nodjoy.cn -&gt; ghcr.io
+</span></span><span style="display:flex;"><span>cloudsmith.nodjoy.cn -&gt; docker.cloudsmith.io
+</span></span><span style="display:flex;"><span>nvcr.nodjoy.cn -&gt; nvcr.io
 </span></span></code></pre></div><hr>
 <blockquote>
 <p>喜欢这篇文章的话 打赏一下吧！</p>
@@ -603,7 +607,7 @@
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://nodjoy.com/post/">
-        <span class="site-state-item-count">74</span>
+        <span class="site-state-item-count">53</span>
         <span class="site-state-item-name">日志</span>
       </a>
     </div>
@@ -620,7 +624,7 @@
     <div class="site-state-item site-state-tags">
         <a href="https://nodjoy.com/tags/">
          
-        <span class="site-state-item-count">77</span>
+        <span class="site-state-item-count">64</span>
         
         <span class="site-state-item-name">标签</span>
         </a>
@@ -777,9 +781,7 @@
 
   <ul>
     <li><a href="#ghcrio镜像源拉取"><code>ghcr.io</code>镜像源拉取</a></li>
-    <li><a href="#gcrio镜像源拉取"><code>gcr.io</code>镜像源拉取</a></li>
-    <li><a href="#registryk8sio镜像源拉取"><code>registry.k8s.io</code>镜像源拉取</a></li>
-    <li><a href="#k8sgcrio镜像源拉取"><code>k8s.gcr.io</code>镜像源拉取</a></li>
+    <li><a href="#其他">其他</a></li>
   </ul>
 </nav></div>
     </div>
