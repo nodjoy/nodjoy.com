@@ -5,18 +5,18 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>MongoDB 安装配置 | Nodjoy</title>
+    <title>Test | Nodjoy</title>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="author" content="Gowshwah">
     <meta name="copyright" content="Gowshwah">
     <meta name="keywords" content="独立,博客,程序员,个人,gowshwah,开发,思考,读书,笔记,技术,分享,PHP,Nodejs,Elixir,Docker,Linux,互联网,前端,后端">
-    <meta property="og:title" content="MongoDB 安装配置">
+    <meta property="og:title" content="Test">
     <meta property="og:url" content="https://nodjoy.com/">
     <meta property="og:site_name" content="Nodjoy">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="MongoDB 安装配置 - Nodjoy" />
+    <meta name="title" content="Test - Nodjoy" />
     <meta name="description" content="博客 | 软件 | 开发 | PHP | Nodejs | Elixir | Docker  | Linux | 读书 | 笔记 | 个人 | gowshwah | 独立 | 思考 | 分享 | 互联网 | 前端 | 后端"> 
     <link rel="shortcut icon" href="https://nodjoy.com/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://nodjoy.com/img/apple-touch-icon.png" />
@@ -301,8 +301,8 @@
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link" href="https://nodjoy.com/note/2020/07/30/mongodb01/" itemprop="url">
-        MongoDB 安装配置
+        <a class="post-title-link" href="https://nodjoy.com/note/20250701/test.html" itemprop="url">
+        Test
         </a>
       </h1>
       <div class="post-meta">
@@ -311,8 +311,8 @@
     <i class="fa fa-calendar-o"></i>
 </span>
 <span class="post-meta-item-text">时间：</span>
-<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-07-30">
-    2020-07-30
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2025-07-01">
+    2025-07-01
 </time>
 </span> 
       
@@ -325,8 +325,8 @@
   <span class="post-meta-item-text">分类：</span>
   
     <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-      <a href="https://nodjoy.com/categories/%E7%AC%94%E8%AE%B0" itemprop="url" rel="index">
-        <span itemprop="name">笔记</span>
+      <a href="https://nodjoy.com/categories/" itemprop="url" rel="index">
+        <span itemprop="name"></span>
       </a>
       &nbsp; 
     </span>
@@ -340,38 +340,14 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">阅读：</span>
-<span class="leancloud-visitors-count">395 字 ~1分钟</span>
+<span class="leancloud-visitors-count">5 字 ~1分钟</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <h1 id="安装配置with-wamp">安装配置（with WAMP）</h1>
-<h2 id="下载mongodbhttpswwwmongodbcomtrydownloadcommunity并将安装包移动到wamp环境目录下">下载<a href="https://www.mongodb.com/try/download/community">MongoDB</a>，并将安装包移动到wamp环境目录下</h2>
-<p><img src="https://nodjoy.com/images/note/202007311027.png" alt=""></p>
-<h2 id="在mongodb目录新建logtxt文件和dat文件目录">在mongodb目录新建log.txt文件和dat文件目录</h2>
-<h2 id="启动命令">启动命令</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mongod --port 8888 --dbpath d:/wamp64/bin/mongodb/data --logpath d:/wamp64/bin/mongodb/log.txt
-</span></span></code></pre></div><p>查看是否启动成功</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>netstat -an
-</span></span></code></pre></div><p><img src="https://nodjoy.com/images/note/202007311035.png" alt=""></p>
-<h2 id="连接mongodb数据库">连接MongoDB数据库</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>mongo localhost:8888
-</span></span></code></pre></div><p><img src="https://nodjoy.com/images/note/202007311040.png" alt=""></p>
-<h1 id="mongodb基本指令">MongoDB基本指令</h1>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>use dbname                          //使用数据库，如果没有则创建
-</span></span><span style="display:flex;"><span>show dbs                            //查看数据库
-</span></span><span style="display:flex;"><span>db.集合名.insert({})                 //插入集合
-</span></span><span style="display:flex;"><span>show tables                         //查看集合
-</span></span><span style="display:flex;"><span>db.集合名.find()                     //查询集合里面的所有文档
-</span></span><span style="display:flex;"><span>db.集合名.findOne()                  //查询集合里面的第一个文档
-</span></span><span style="display:flex;"><span>db.集合名.drop()                     //删除集合
-</span></span><span style="display:flex;"><span>db.dropDatabase()                   //删除数据库（当前use的数据库）
-</span></span><span style="display:flex;"><span>db.集合名.remove({age:5})            //删除文档
-</span></span><span style="display:flex;"><span>db.集合名.update({条件}),{新文档}      //更新文档
-</span></span><span style="display:flex;"><span>db.集合名.find({条件})                //查询文档
-</span></span></code></pre></div><hr>
-<div id="boxyCover" class="cover_bg" _hover-ignore="1"></div>
-<div class="pop pop_main_box hangge_boxy_alert" style="display: none;">
+    <hr>
+<div id="boxyCover" _hover-ignore="1"></div>
+<div class="pop pop_main_box hangge_boxy_alert" style="display: none; top: 218px;">
 	<i class="pop-close fa fa-thin fa-xmark" onclick="closePayPage()"></i>
 	<div class="pop-title" _hover-ignore="1">
 		<div class="pop_name">给 nodjoy.com 打赏......</div>
@@ -406,14 +382,9 @@
     $(document).ready(function(){
         $(".btn-pay").click(function(){
             $(".pop").css({display:"block"});
+            $(".pop").css({position:"fixed"});
             $(".pop_main_box").show();
             $("#boxyCover").show();
-        });
-
-		$(".cover_bg").click(function(){
-            $(".pop").css({display:"none"});
-            $(".pop_main_box").hide();
-            $("#boxyCover").hide();
         });
     });
     function closePayPage(){
@@ -427,9 +398,9 @@
     
     
 <span
-  id="https://nodjoy.com/note/2020/07/30/mongodb01/"
+  id="https://nodjoy.com/note/20250701/test.html"
   class="leancloud_visitors"
-  data-flag-title="MongoDB 安装配置"
+  data-flag-title="Test"
 >
   <p></p>
 </span>
@@ -457,7 +428,7 @@
       var httpRequest = new XMLHttpRequest();
       let barkKey = "95C7PKkV6Kxu692W6LP9YN";
       let title = "网站有新的留言了! ";
-      let blogTitle = "文章:" + "MongoDB 安装配置 " + " \n";
+      let blogTitle = "文章:" + "Test " + " \n";
       let content =
         "留言内容： " + document.getElementById("veditor").value + " \n";
       let site = "链接： " + window.location.href + "  ";
@@ -479,11 +450,7 @@
  
 <div class="post-tags">     
      
-    <a href="https://nodjoy.com/tags/mongodb" rel="tag" title="MongoDB">#MongoDB#</a>
-    
-    <a href="https://nodjoy.com/tags/nosql" rel="tag" title="nosql">#nosql#</a>
-    
-    <a href="https://nodjoy.com/tags/%e6%95%b0%e6%8d%ae%e5%ba%93" rel="tag" title="数据库">#数据库#</a>
+    <a href="https://nodjoy.com/tags/" rel="tag" title="">##</a>
     
 </div>
 
@@ -492,16 +459,12 @@
      <div class="post-nav">
     <div class="post-nav-next post-nav-item">
     
-        <a href="https://nodjoy.com/note/2020/07/31/laravel06/" rel="next" title="Laravel Api开发之laravel/passport授权包的使用及基本配置">
-        <i class="fa fa-chevron-left"></i> Laravel Api开发之laravel/passport授权包的使用及基本配置
-        </a>
-    
     </div>
 
     <div class="post-nav-prev post-nav-item">
     
-        <a href="https://nodjoy.com/note/2020/07/23/laravel04/" rel="prev" title="Laravel基础04-视图">
-        Laravel基础04-视图 <i class="fa fa-chevron-right"></i>
+        <a href="https://nodjoy.com/note/20240517/vm-nat.html" rel="prev" title="Proxmox虚拟机配置NAT网络">
+        Proxmox虚拟机配置NAT网络 <i class="fa fa-chevron-right"></i>
         </a>
     
     </div>
@@ -530,7 +493,16 @@
 <aside id="sidebar" class="sidebar">
   <div class="sidebar-inner">
 
-    <section class="site-overview sidebar-panel  sidebar-panel-active ">
+  <ul class="sidebar-nav motion-element">
+    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+      文章目录
+    </li>
+    <li class="sidebar-nav-overview" data-target="site-overview">
+      站点概览
+    </li>
+  </ul>
+
+    <section class="site-overview sidebar-panel ">
       <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image"
         src="https://nodjoy.com/img/author.jpg"
@@ -610,7 +582,7 @@
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://nodjoy.com/post/">
-        <span class="site-state-item-count">51</span>
+        <span class="site-state-item-count">52</span>
         <span class="site-state-item-name">日志</span>
       </a>
     </div>
@@ -748,6 +720,12 @@
 
     </section>
     
+<section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+    <div class="post-toc">
+        <div class="post-toc-content"><nav id="TableOfContents"></nav></div>
+    </div>
+</section>
+
   </div>
 </aside>
 

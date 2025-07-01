@@ -340,7 +340,7 @@
     <i class="fa fa-eye"></i>
 </span>
 <span class="post-meta-item-text">阅读：</span>
-<span class="leancloud-visitors-count">52 字 ~1分钟</span>
+<span class="leancloud-visitors-count">84 字 ~1分钟</span>
 </span>
       </div>
     </header>
@@ -355,17 +355,57 @@
 </span></span></code></pre></div><h2 id="启动项目">启动项目</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>npm start
 </span></span></code></pre></div><hr>
-<blockquote>
-<p>喜欢这篇文章的话 打赏一下吧！</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th><img src="https://nodjoy.com/images/pay/eb05acdaec967.png" alt="Wechat"></th>
-<th style="text-align:right"><img src="https://nodjoy.com/images/pay/0831de845.png" alt="Alipay"></th>
-</tr>
-</thead>
-</table>
+<div id="boxyCover" class="cover_bg" _hover-ignore="1"></div>
+<div class="pop pop_main_box hangge_boxy_alert" style="display: none;">
+	<i class="pop-close fa fa-thin fa-xmark" onclick="closePayPage()"></i>
+	<div class="pop-title" _hover-ignore="1">
+		<div class="pop_name">给 nodjoy.com 打赏......</div>
+	</div>
+	
+	<div class="pop-content">
+		<div class="pop-interval-30" _hover-ignore="1">
+			<div class="pop-slogan">
+				<p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作。</p>
+			</div>
+			<div class="gratuity-process">
+				<div style="float:left;text-align:center">
+					<img class="pop-slogan-img" width="80%" src="https://nodjoy.com/images/pay/eb05acdaec967.png">
+				</div>
+				<div style="float:right;text-align:center">
+					<img class="pop-slogan-img" width="80%" src="https://nodjoy.com/images/pay/0831de845.png">
+				</div>
+                <div style="float:left;width: 100%;height: 26px;"></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="support-author">
+    <div class="btn btn-pay">打赏支持</div>
+</div><br/>
+<script src="https://nodjoy.com/js/jquery.min.js"></script>
+<script>
+    $(".pop_main_box").hide();
+    $("#boxyCover").hide();
+    $(document).ready(function(){
+        $(".btn-pay").click(function(){
+            $(".pop").css({display:"block"});
+            $(".pop_main_box").show();
+            $("#boxyCover").show();
+        });
+
+		$(".cover_bg").click(function(){
+            $(".pop").css({display:"none"});
+            $(".pop_main_box").hide();
+            $("#boxyCover").hide();
+        });
+    });
+    function closePayPage(){
+        $(".pop_main_box").hide();
+        $("#boxyCover").hide();
+    }
+</script>
 
     </div>
 	<div class="post-comment">
@@ -562,7 +602,7 @@
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://nodjoy.com/post/">
-        <span class="site-state-item-count">52</span>
+        <span class="site-state-item-count">51</span>
         <span class="site-state-item-name">日志</span>
       </a>
     </div>
@@ -579,7 +619,7 @@
     <div class="site-state-item site-state-tags">
         <a href="https://nodjoy.com/tags/">
          
-        <span class="site-state-item-count">64</span>
+        <span class="site-state-item-count">62</span>
         
         <span class="site-state-item-name">标签</span>
         </a>
