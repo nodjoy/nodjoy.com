@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Nodjoy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 17 May 2024 09:12:55 +0800</lastBuildDate><atom:link href="https://nodjoy.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Jul 2025 13:08:26 +0800</lastBuildDate><atom:link href="https://nodjoy.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OCR识别图片文字内容</title>
+      <link>https://nodjoy.com/note/20250725/ocr.html</link>
+      <pubDate>Fri, 25 Jul 2025 13:08:26 +0800</pubDate>
+      
+      <guid>https://nodjoy.com/note/20250725/ocr.html</guid>
+      <description>使用python-ddddocr库识别图片文字内容 环境： conda create -n py312 python=3.12 &amp;amp;&amp;amp; conda activate py312 依赖安装：pip install ddddocr flask Python代码: from flask import Flask, request import ddddocr import base64 import json from PIL</description>
+    </item>
+    
     <item>
       <title>Proxmox虚拟机配置NAT网络</title>
       <link>https://nodjoy.com/note/20240517/vm-nat.html</link>

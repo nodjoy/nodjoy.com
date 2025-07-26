@@ -195,7 +195,7 @@ body {
 .menu-active{
   display: none !important;
 }
-@media (max-width: 667px) { // 表示在小于等于 667px 的屏幕下，应用以下样式
+@media (max-width: 667px) { 
   body {
     padding-right: 0 !important;
   }
@@ -203,7 +203,7 @@ body {
     display: block !important;
   }
 }
-@media (min-width: 668px) and (max-width: 760px) { // 表示在大于等于 668px 并且小于等于 760px 的屏幕下，应用以下样式
+@media (min-width: 668px) and (max-width: 760px) { 
   body {
     padding-right: 0 !important;
   }
@@ -211,16 +211,18 @@ body {
     display: block !important;
   }
 }
-@media (min-width: 761px) and (max-width: 1599px) { // pad
-  .site-nav .menu {
+
+@media (min-width: 761px) and (max-width: 1599px) {
+  /* .site-nav .menu {
     display: block !important;
-  }
-  .menu-active {
+  } */
+  /* .menu-active {
     display: none !important;
-  }
+  } */
   
 }
-@media (min-width: 1600px) { // 表示在大于等于 1600px 的屏幕下，应用以下样式
+
+@media (min-width: 1600px) {
   body {
     font-size: 16px;
   }
