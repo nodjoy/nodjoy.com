@@ -5,17 +5,19 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>Shadowsocks的安装与配置 | Nod Joy</title>
+    <title>Shadowsocks的安装与配置 | Nodjoy</title>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <meta name="keywords" content="独立,博客,程序员,个人,开发,思考,读书,笔记,技术,分享,PHP,Nodejs,Elixir,Docker,Linux,互联网,前端,后端">
-    
+    <meta name="author" content="Gowshwah">
+    <meta name="copyright" content="Gowshwah">
+    <meta name="keywords" content="独立,博客,程序员,个人,gowshwah,开发,思考,读书,笔记,技术,分享,PHP,Nodejs,Elixir,Docker,Linux,互联网,前端,后端">
     <meta property="og:title" content="Shadowsocks的安装与配置">
-    <meta property="og:site_name" content="Nod Joy">
+    <meta property="og:url" content="https://nodjoy.com/">
+    <meta property="og:site_name" content="Nodjoy">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="Shadowsocks的安装与配置 - Nod Joy" />
-    <meta name="description" content="博客 | 软件 | 开发 | PHP | Nodejs | Elixir | Docker  | Linux | 读书 | 笔记 | 个人 | 独立 | 思考 | 分享 | 互联网 | 前端 | 后端"> 
+    <meta name="title" content="Shadowsocks的安装与配置 - Nodjoy" />
+    <meta name="description" content="博客 | 软件 | 开发 | PHP | Nodejs | Elixir | Docker  | Linux | 读书 | 笔记 | 个人 | gowshwah | 独立 | 思考 | 分享 | 互联网 | 前端 | 后端"> 
     <link rel="shortcut icon" href="https://nodjoy.com/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://nodjoy.com/img/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" href="https://nodjoy.com/img/apple-touch-icon.png" />
@@ -23,16 +25,18 @@
     <link href="https://nodjoy.com/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
     <link href="https://nodjoy.com/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
     <link href="https://nodjoy.com/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="https://nodjoy.com/css/custom.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://nodjoy.com/css/govicons.min.css"/>
     <link href="https://nodjoy.com/css/syntax.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://nodjoy.com/js/jquery.min.js"></script>
     <script type="text/javascript" id="hexo.configuration">
-	  var NexT = window.NexT || {};
-	  var CONFIG = {
-		scheme: 'Pisces',
-		sidebar: {"position":"left","display":"post"},
-		 fancybox: true, 
-		motion: true
-	  };
+      var NexT = window.NexT || {};
+      var CONFIG = {
+      scheme: 'Pisces',
+      sidebar: {"position":"left","display":"post"},
+       fancybox: true, 
+      motion: true
+      };
 	</script>
 </head>
 
@@ -54,13 +58,13 @@
       <div class="header-inner"> <div class="site-meta  custom-logo ">
 
   <div class="custom-logo-site-title">
-    <a href="https://nodjoy.com"  class="brand" rel="start">
+    <a href="https://nodjoy.com/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Nod Joy</span>
+      <span class="site-title">Nodjoy</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle">是谁来自山川湖海 却囿于昼夜厨房与爱</p>
+  <p class="site-subtitle">只做了一点微小的工作</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -76,50 +80,56 @@
       
       
         <li class="menu-item ">
-          <a href="https://nodjoy.com/" rel="section">
+          <a href="https://nodjoy.com/"  rel="section">
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页
           </a>
         </li>
       
         <li class="menu-item ">
-          <a href="https://nodjoy.com/categories/%E6%8A%80%E6%9C%AF/" rel="section">
+          <a href="https://nodjoy.com/categories/%E6%8A%80%E6%9C%AF/"  rel="section">
               <i class="menu-item-icon fa fa-fw fa-code"></i> <br />技术
           </a>
         </li>
       
         <li class="menu-item ">
-          <a href="https://nodjoy.com/categories/%E7%AC%94%E8%AE%B0/" rel="section">
+          <a href="https://nodjoy.com/categories/%E7%AC%94%E8%AE%B0/"  rel="section">
               <i class="menu-item-icon fa fa-fw fa-book"></i> <br />笔记
           </a>
         </li>
       
         <li class="menu-item ">
-          <a href="https://nodjoy.com/categories/%E6%9D%82%E8%AE%B0/" rel="section">
+          <a href="https://nodjoy.com/categories/%E6%9D%82%E8%AE%B0/"  rel="section">
               <i class="menu-item-icon fa fa-fw fa-leaf"></i> <br />杂记
           </a>
         </li>
       
         <li class="menu-item ">
-          <a href="https://nodjoy.com/categories/%E5%88%86%E4%BA%AB/" rel="section">
+          <a href="https://nodjoy.com/categories/%E5%88%86%E4%BA%AB/"  rel="section">
               <i class="menu-item-icon fa fa-fw fa-share"></i> <br />分享
           </a>
         </li>
       
         <li class="menu-item ">
-          <a href="https://nodjoy.com/post/" rel="section">
+          <a href="https://nodjoy.com/post/"  rel="section">
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档
           </a>
         </li>
       
         <li class="menu-item ">
-          <a href="https://nodjoy.com/about" rel="section">
+          <a href="https://nodjoy.com/about"  rel="section">
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于
           </a>
         </li>
       
         <li class="menu-item ">
-          <a href="https://nodjoy.com/status" rel="section">
-              <i class="menu-item-icon fa fa-fw fa-signal"></i> <br />状态
+          <a href="https://nodjoy.com/status"  rel="section">
+              <i class="menu-item-icon fa fa-fw fa-signal"></i> <br />站点监控
+          </a>
+        </li>
+      
+        <li class="menu-item ">
+          <a href="//dash.nodjoy.com"  target="_blank"  rel="section">
+              <i class="menu-item-icon fa fa-fw fa-server"></i> <br />服务监控
           </a>
         </li>
       
@@ -127,17 +137,69 @@
         <a href="javascript:;" class="popup-trigger"> <i class="menu-item-icon fa fa-search fa-fw"></i> <br /> 搜索</a>
       </li>
     </ul>
-    <ul id="menu-link" class="menu menu-site menu-active">
+    
+    <ul id="menu-socials" class="menu menu-site menu-active">
       
       <li class="menu-item ">
-        <a href="https://shop.nodjoy.com" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-cart-shopping"></i> <br />我的小店
+        <a href="https://github.com/nodjoy" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-github"></i> <br />GitHub
           </a>
         </li>
       
       <li class="menu-item ">
-        <a href="https://hub.nodjoy.com" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-docker"></i> <br />Harbor
+        <a href="https://instagram.com/gowshwah" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-instagram"></i> <br />Instagram
+          </a>
+        </li>
+      
+      <li class="menu-item ">
+        <a href="https://weibo.com/u/6515305531" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-weibo"></i> <br />Weibo
+          </a>
+        </li>
+      
+      <li class="menu-item ">
+        <a href="mailto:nodjoy@163.com" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-envelope"></i> <br />Email
+          </a>
+        </li>
+      
+      <li class="menu-item ">
+        <a href="https://b23.tv/jFlb6ip" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-bilibili"></i> <br />Bilibili
+          </a>
+        </li>
+      
+      <li class="menu-item ">
+        <a href="https://bento.me/nodjoy" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-arrow-up-right-from-square"></i> <br />Bento
+          </a>
+        </li>
+      
+      
+      
+      <li class="menu-item img-hover dy-hover" style="opacity: 1; transform: translateY(0px);">
+        <a rel="section">
+            <i class="menu-item-icon fa fa-fw fa-tiktok"></i> <br />抖音
+        </a>
+        <img class="common-img-hover img-dy-hover" src="https://nodjoy.com/img/dy-qr.jpg" />
+      </li>
+      
+      <li class="menu-item img-hover wx-hover" style="opacity: 1; transform: translateY(0px);">
+        <a rel="section">
+            <i class="menu-item-icon fa fa-fw fa-hand-holding-dollar"></i> <br />打赏
+        </a>
+        <img class="common-img-hover img-wx-hover" src="https://nodjoy.com/img/zs-qr.jpg" />
+      </li>
+      
+      
+    </ul>
+    
+    <ul id="menu-link" class="menu menu-site menu-active">
+      
+      <li class="menu-item ">
+        <a href="https://note.nodjoy.com" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-book"></i> <br />在线笔记
           </a>
         </li>
       
@@ -148,8 +210,32 @@
         </li>
       
       <li class="menu-item ">
-        <a href="https://note.nodjoy.com" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-book"></i> <br />在线笔记
+        <a href="https://ssl.nodjoy.com" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-key"></i> <br />域名证书管理
+          </a>
+        </li>
+      
+      <li class="menu-item ">
+        <a href="https://files.nodjoy.com" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-cloud"></i> <br />云盘
+          </a>
+        </li>
+      
+      <li class="menu-item ">
+        <a href="https://download.nodjoy.com" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-download"></i> <br />Download Hub
+          </a>
+        </li>
+      
+      <li class="menu-item ">
+        <a href="https://docker.nodjoy.cn" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-globe"></i> <br />DockerHub Mirror
+          </a>
+        </li>
+      
+      <li class="menu-item ">
+        <a href="https://hub.nodjoy.com" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-docker"></i> <br />Harbor
           </a>
         </li>
       
@@ -178,15 +264,21 @@
         </li>
       
     </ul>
+
+
     <span class="menu-active" style="display: inline-block; margin-left: 14px;"><b class="menu-active">友链</b></span>
-    <ul id="menu-link" class="menu menu-link menu-active">
+    <ul class="menu menu-link menu-active">
       
       <li class="menu-item ">
         <a href="https://milu.blog" rel="section">milu杰克</a>
         </li>
       
+      <li class="menu-item ">
+        <a href="https://www.xiaocai.ink" rel="section">小菜</a>
+        </li>
+      
     </ul>
-    
+
     <div class="site-search">
       <div class="popup">
  <span class="search-icon fa fa-search"></span>
@@ -246,10 +338,20 @@
        <span>
 &nbsp; | &nbsp;
 <span class="post-meta-item-icon">
-    <i class="fa fa-eye"></i>
+    <i class="fa fa-readme"></i>
 </span>
 <span class="post-meta-item-text">阅读：</span>
-<span class="leancloud-visitors-count">248 字 ~1分钟</span>
+<span class="leancloud-visitors-count">234 字 ~1分钟</span>
+</span>
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-eye"></i>
+</span>
+<span id="/leaf/20210122/ssr.html" class="leancloud_visitors" data-flag-title="Shadowsocks的安装与配置">
+    <span class="post-meta-item-text">阅读量: </span>
+    <span class="leancloud-visitors-count">0</span>
+</span>
 </span>
       </div>
     </header>
@@ -288,64 +390,127 @@
 <h2 id="在githubhttpsgithubcomshadowsocksshadowsocks-windowsreleases等搜索下载shadowsocks">在<a href="https://github.com/shadowsocks/shadowsocks-windows/releases">Github</a>等搜索下载shadowsocks</h2>
 <h2 id="进行如下配置完成即可">进行如下配置，完成即可！</h2>
 <p><img src="https://nodjoy.com/images/leaf/202101/ssr-setting.png" alt=""></p>
-<hr>
-<blockquote>
-<p>喜欢这篇文章的话 打赏一下吧！</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th><img src="https://nodjoy.com/images/pay/eb05acdaec967.png" alt="Wechat"></th>
-<th style="text-align:right"><img src="https://nodjoy.com/images/pay/0831de845.png" alt="Alipay"></th>
-</tr>
-</thead>
-</table>
 
     </div>
-	<div class="post-comment">
+    <div class="post-nav">
+<div style="border: 1px dashed #e0e0e0; padding: 10px 10px 10px 10px; background-color: #fffeee; background-repeat: no-repeat; background-attachment: scroll; background-position: 1% 50%; -moz-background-size: auto auto; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
+    <div style="float:left;margin-top:0px;">
+    <img src="https://nodjoy.com/img/author.jpg" style="width: 110px;"/>
+    <div style="text-align:center;"></div>
+    </div>
+    <div>
+        <p style="margin-top:0px;">
+            &nbsp;&nbsp;标题：Shadowsocks的安装与配置
+        <br />&nbsp;&nbsp;作者：<a target="_blank" href="https://nodjoy.com/">Nodjoy</a>
+        
+        <br />&nbsp;&nbsp;声明：自由转载-非商用-非衍生-保持署名（创作共享3.0许可证）
+        </p>
+    </div>
+</div>
+<div class="clear"></div>
+</div>
+    <hr />
+    <div id="boxyCover" class="cover_bg" _hover-ignore="1"></div>
+<div class="pop pop_main_box hangge_boxy_alert" style="display: none;">
+	<i class="pop-close fa fa-thin fa-xmark" onclick="closePayPage()"></i>
+	<div class="pop-title" _hover-ignore="1">
+		<div class="pop_name">给 nodjoy.com 打赏......</div>
+	</div>
+	
+	<div class="pop-content">
+		<div class="pop-interval-30" _hover-ignore="1">
+			<div class="pop-slogan">
+				<p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作。</p>
+			</div>
+			<div class="gratuity-process">
+				<div style="float:left;width:48%;text-align:center">
+					<img class="pop-slogan-img" width="80%" src="https://nodjoy.com/images/pay/eb05acdaec967.png">
+				</div>
+				<div style="float:right;width:48%;text-align:center">
+					<img class="pop-slogan-img" width="80%" src="https://nodjoy.com/images/pay/0831de845.png">
+				</div>
+                <div style="float:left;width: 100%;height: 26px;"></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="support-author">
+    <div class="btn btn-pay">打赏支持</div>
+</div><br/>
+<script>
+    $(".pop_main_box").hide();
+    $("#boxyCover").hide();
+    $(document).ready(function(){
+        $(".btn-pay").click(function(){
+            $(".pop").css({display:"block"});
+            $(".pop_main_box").show();
+            $("#boxyCover").show();
+        });
+
+		$(".cover_bg").click(function(){
+            $(".pop").css({display:"none"});
+            $(".pop_main_box").hide();
+            $("#boxyCover").hide();
+        });
+    });
+    function closePayPage(){
+        $(".pop_main_box").hide();
+        $("#boxyCover").hide();
+    }
+</script>
     
-    
-<span id="https://nodjoy.com/leaf/20210122/ssr.html" class="leancloud_visitors" data-flag-title="Shadowsocks的安装与配置">
-<p></p>
+    <div class="post-comment">
+      
+      
+<span
+  id="https://nodjoy.com/leaf/20210122/ssr.html"
+  class="leancloud_visitors"
+  data-flag-title="Shadowsocks的安装与配置"
+>
+  <p></p>
 </span>
 <div id="vcomments"></div>
 <script src="https://nodjoy.com/js/Valine.min.js"></script>
 <script type="text/javascript">
-new Valine({
-    el: '#vcomments' ,
-    appId: '9iOmqWQl7wQBsarOb3o2m0eO-gzGzoHsz',
-    appKey: 'U2cCMaQisH6I3GsyClKuvrwK',
-    notify: 'false',
-    verify: 'false',
-    avatar:'mm',
-    placeholder: '说点什么吧...',
-    visitor: 'true'
-});
-
-
-let vsubmit = document.getElementsByClassName('vsubmit');
-for(var i in vsubmit)
-{
-    vsubmit[i].onclick=function() { 
-        var httpRequest = new XMLHttpRequest();
-        let pushToken = 'e5c93939959f49d798fa84b847220442';
-        let barkKey = '95C7PKkV6Kxu692W6LP9YN';
-        let title = '网站有新的留言了! ';
-        let blogTitle = "文章:" + "Shadowsocks的安装与配置 "+' \n';
-        let content = '留言内容： '+document.getElementById("veditor").value+' \n';
-        let site = '链接： '+window.location.href+"  ";
-        var date = new Date();
-        let subDate = '时间： '+date .toLocaleString()+" ";
-        
-        
-        
-        let url = "//api.day.app/"+barkKey+'/'+title+"/" +blogTitle+content;
-        httpRequest.open('GET', url, true);
-        httpRequest.send();
+  new Valine({
+    el: "#vcomments",
+    appId: "9iOmqWQl7wQBsarOb3o2m0eO-gzGzoHsz",
+    appKey: "U2cCMaQisH6I3GsyClKuvrwK",
+    path: "\/leaf\/20210122\/ssr.html",
+    avatar: "wavatar",
+    avatar_cdn: "https:\/\/cravatar.cn\/avatar\/",
+    placeholder: "说点什么吧...",
+    visitor: true,
+  });
+</script> 
+<script type="text/javascript">
+  
+  let vsubmit = document.getElementsByClassName("vsubmit");
+  for (var i in vsubmit) {
+    vsubmit[i].onclick = function () {
+      
+      var httpRequest = new XMLHttpRequest();
+      let barkKey = "95C7PKkV6Kxu692W6LP9YN";
+      let title = "网站有新的留言了! ";
+      let blogTitle = "文章:" + "Shadowsocks的安装与配置 " + " \n";
+      let content =
+        "留言内容： " + document.getElementById("veditor").value + " \n";
+      let site = "链接： " + window.location.href + "  ";
+      var date = new Date();
+      let subDate = "时间： " + date.toLocaleString() + " ";
+      
+      let url =
+        "//api.day.app/" + barkKey + "/" + title + "/" + blogTitle + content;
+      httpRequest.open("GET", url, true);
+      httpRequest.send();
     };
-}
+  }
 </script>
-	</div>
+
+
+    </div>
     <footer class="post-footer">
      
  
@@ -415,49 +580,83 @@ for(var i in vsubmit)
       <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image"
         src="https://nodjoy.com/img/author.jpg"
-        alt="Nod Joy" />
-    <p class="site-author-name" itemprop="name">Nod Joy</p>
+        alt="Nodjoy" />
+    <p class="site-author-name" itemprop="name">Nodjoy</p>
     <p class="site-description motion-element" itemprop="description"> 
-        Programmer &amp; Architect</p>
+        Developer &amp; Acceleration Engineer⏩</p>
 </div>
-      
-<div class="links-of-author motion-element">
-    
-        <span class="links-of-author-item">
-        <a href="https://github.com" target="_blank" title="GitHub">
-            <i class="fa fa-fw fa-github"></i>
-            GitHub
-        </a>
-        </span>
-    
-        <span class="links-of-author-item">
-        <a href="https://www.instagram.com/ins0273" target="_blank" title="Instagram">
-            <i class="fa fa-fw fa-instagram"></i>
-            Instagram
-        </a>
-        </span>
-    
-        <span class="links-of-author-item">
-        <a href="https://weibo.com/u/6515305531" target="_blank" title="Weibo">
-            <i class="fa fa-fw fa-weibo"></i>
-            Weibo
-        </a>
-        </span>
-    
-        <span class="links-of-author-item">
-        <a href="mailto:nodjoy@163.com" target="_blank" title="Email">
-            <i class="fa fa-fw fa-envelope"></i>
-            Email
-        </a>
-        </span>
-    
+      <div class="links-of-author motion-element">
+  
+  
+  <span class="links-of-author-item">
+    <a href="https://github.com/nodjoy" target="_blank" title="GitHub">
+      <i class="fa fa-fw fa-github"></i>
+      GitHub
+    </a>
+  </span>
+  
+  <span class="links-of-author-item">
+    <a href="https://instagram.com/gowshwah" target="_blank" title="Instagram">
+      <i class="fa fa-fw fa-instagram"></i>
+      Instagram
+    </a>
+  </span>
+  
+  <span class="links-of-author-item">
+    <a href="https://weibo.com/u/6515305531" target="_blank" title="Weibo">
+      <i class="fa fa-fw fa-weibo"></i>
+      Weibo
+    </a>
+  </span>
+  
+  <span class="links-of-author-item">
+    <a href="mailto:nodjoy@163.com" target="_blank" title="Email">
+      <i class="fa fa-fw fa-envelope"></i>
+      Email
+    </a>
+  </span>
+  
+  <span class="links-of-author-item">
+    <a href="https://b23.tv/jFlb6ip" target="_blank" title="Bilibili">
+      <i class="fa fa-fw fa-bilibili"></i>
+      Bilibili
+    </a>
+  </span>
+  
+  <span class="links-of-author-item">
+    <a href="https://bento.me/nodjoy" target="_blank" title="Bento">
+      <i class="fa fa-fw fa-arrow-up-right-from-square"></i>
+      Bento
+    </a>
+  </span>
+  
+  
+  
+  
+  <span class="links-of-author-item">
+    <a title="抖音" class="img-hover dy-hover">
+      <i class="fa fa-fw fa-tiktok"></i>
+      抖音
+      <img class="common-img-hover img-dy-hover" src="https://nodjoy.com/img/dy-qr.jpg" /> 
+    </a>
+  </span>
+  
+  <span class="links-of-author-item">
+    <a title="打赏" class="img-hover wx-hover">
+      <i class="fa fa-fw fa-hand-holding-dollar"></i>
+      打赏
+      <img class="common-img-hover img-wx-hover" src="https://nodjoy.com/img/zs-qr.jpg" /> 
+    </a>
+  </span>
+  
+  
 </div>
 
 
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://nodjoy.com/post/">
-        <span class="site-state-item-count">72</span>
+        <span class="site-state-item-count">54</span>
         <span class="site-state-item-name">日志</span>
       </a>
     </div>
@@ -474,7 +673,7 @@ for(var i in vsubmit)
     <div class="site-state-item site-state-tags">
         <a href="https://nodjoy.com/tags/">
          
-        <span class="site-state-item-count">73</span>
+        <span class="site-state-item-count">70</span>
         
         <span class="site-state-item-name">标签</span>
         </a>
@@ -486,65 +685,90 @@ for(var i in vsubmit)
     <div class="links-of-blogroll-title">
         <i class="fa fa-fw fa-tools"></i>
         工具站
+        <ul class="links-of-blogroll-list">
+            
+            <li class="links-of-blogroll-item">
+                <a href="https://note.nodjoy.com" title="在线笔记" target="_blank">
+                    <i class="fa fa-fw fa-book"></i>
+                    在线笔记
+                </a>
+            </li>
+            
+            <li class="links-of-blogroll-item">
+                <a href="https://doc.nodjoy.com" title="在线文档" target="_blank">
+                    <i class="fa fa-fw fa-file-text"></i>
+                    在线文档
+                </a>
+            </li>
+            
+            <li class="links-of-blogroll-item">
+                <a href="https://ssl.nodjoy.com" title="域名证书管理" target="_blank">
+                    <i class="fa fa-fw fa-key"></i>
+                    域名证书管理
+                </a>
+            </li>
+            
+            <li class="links-of-blogroll-item">
+                <a href="https://files.nodjoy.com" title="云盘" target="_blank">
+                    <i class="fa fa-fw fa-cloud"></i>
+                    云盘
+                </a>
+            </li>
+            
+            <li class="links-of-blogroll-item">
+                <a href="https://download.nodjoy.com" title="Download Hub" target="_blank">
+                    <i class="fa fa-fw fa-download"></i>
+                    Download Hub
+                </a>
+            </li>
+            
+            <li class="links-of-blogroll-item">
+                <a href="https://docker.nodjoy.cn" title="DockerHub Mirror" target="_blank">
+                    <i class="fa fa-fw fa-globe"></i>
+                    DockerHub Mirror
+                </a>
+            </li>
+            
+            <li class="links-of-blogroll-item">
+                <a href="https://hub.nodjoy.com" title="Harbor" target="_blank">
+                    <i class="fa fa-fw fa-docker"></i>
+                    Harbor
+                </a>
+            </li>
+            
+            <li class="links-of-blogroll-item">
+                <a href="https://ref.nodjoy.com" title="Quick Reference" target="_blank">
+                    <i class="fa fa-fw fa-magnifying-glass"></i>
+                    Quick Reference
+                </a>
+            </li>
+            
+            <li class="links-of-blogroll-item">
+                <a href="https://cmd.nodjoy.com" title="Linux 命令查询" target="_blank">
+                    <i class="fa fa-fw fa-terminal"></i>
+                    Linux 命令查询
+                </a>
+            </li>
+            
+            <li class="links-of-blogroll-item">
+                <a href="https://mock.nodjoy.com" title="Mock 模拟数据" target="_blank">
+                    <i class="fa fa-fw fa-m"></i>
+                    Mock 模拟数据
+                </a>
+            </li>
+            
+            <li class="links-of-blogroll-item">
+                <a href="https://view.nodjoy.com" title="文档预览服务" target="_blank">
+                    <i class="fa fa-fw fa-regular fa-file-code"></i>
+                    文档预览服务
+                </a>
+            </li>
+            
+        </ul>
     </div>
-    
-        <span class="links-of-site-item">
-        <a href="https://shop.nodjoy.com" target="_blank" title="我的小店">
-            <i class="fa fa-fw fa-cart-shopping"></i>
-            我的小店
-        </a>
-        </span>
-    
-        <span class="links-of-site-item">
-        <a href="https://hub.nodjoy.com" target="_blank" title="Harbor">
-            <i class="fa fa-fw fa-docker"></i>
-            Harbor
-        </a>
-        </span>
-    
-        <span class="links-of-site-item">
-        <a href="https://doc.nodjoy.com" target="_blank" title="在线文档">
-            <i class="fa fa-fw fa-file-text"></i>
-            在线文档
-        </a>
-        </span>
-    
-        <span class="links-of-site-item">
-        <a href="https://note.nodjoy.com" target="_blank" title="在线笔记">
-            <i class="fa fa-fw fa-book"></i>
-            在线笔记
-        </a>
-        </span>
-    
-        <span class="links-of-site-item">
-        <a href="https://ref.nodjoy.com" target="_blank" title="Quick Reference">
-            <i class="fa fa-fw fa-magnifying-glass"></i>
-            Quick Reference
-        </a>
-        </span>
-    
-        <span class="links-of-site-item">
-        <a href="https://cmd.nodjoy.com" target="_blank" title="Linux 命令查询">
-            <i class="fa fa-fw fa-terminal"></i>
-            Linux 命令查询
-        </a>
-        </span>
-    
-        <span class="links-of-site-item">
-        <a href="https://mock.nodjoy.com" target="_blank" title="Mock 模拟数据">
-            <i class="fa fa-fw fa-m"></i>
-            Mock 模拟数据
-        </a>
-        </span>
-    
-        <span class="links-of-site-item">
-        <a href="https://view.nodjoy.com" target="_blank" title="文档预览服务">
-            <i class="fa fa-fw fa-regular fa-file-code"></i>
-            文档预览服务
-        </a>
-        </span>
-    
 </div>
+
+      
 
       
     <div class="links-of-blogroll motion-element inline">
@@ -558,12 +782,16 @@ for(var i in vsubmit)
             <a href="https://milu.blog" title="milu杰克" target="_blank">milu杰克</a>
         </li>
         
+        <li class="links-of-blogroll-item">
+            <a href="https://www.xiaocai.ink" title="小菜" target="_blank">小菜</a>
+        </li>
+        
     </ul>
     </div>
 
 
       <div class="links-of-blogroll motion-element inline">
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5t3mz7o0h3k&amp;m=0&amp;s=220&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33&amp;bv=35" async="async"></script>
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=1VnPZadftGnvev4YDLORuwZ2lCFCy6ZxrUzwOoFk2ac"></script>
 </div>
 
     </section>
@@ -607,7 +835,7 @@ for(var i in vsubmit)
   <span itemprop="copyrightYear"> &copy; 2020 - <span class="currentYear"></span></span>
   <span class="with-love"><i class="fa fa-heart"></i></span>
   <span id="container"></span>
-  <span class="author" itemprop="copyrightHolder">Nod Joy</span>
+  <span class="author" itemprop="copyrightHolder">NODJOY.</span>
 </div>
 <div class="powered-by">
   Powered by -
@@ -766,6 +994,43 @@ for(var i in vsubmit)
     container.setAttribute("class", "with-container");
     container.appendChild(i);
   }
+
+  const dyHover = document.querySelector('.dy-hover');
+  const dyImg = dyHover.querySelector('img');
+  const wxHover = document.querySelector('.wx-hover');
+  const wxImg = wxHover.querySelector('img');
+  
+  let isImageVisible = false;
+
+  
+  dyHover.addEventListener('click', function(event) {
+    wxImg.style.display = 'none';
+    event.stopPropagation(); 
+    isImageVisible = !isImageVisible;
+    dyImg.style.display = isImageVisible ? 'block' : 'none';
+  });
+
+  
+  document.addEventListener('click', function() {
+    if (isImageVisible) {
+      dyImg.style.display = 'none';
+      isImageVisible = false;
+    }
+  });
+
+  wxHover.addEventListener('click', function(event) {
+    dyImg.style.display = 'none';
+    event.stopPropagation();
+    isImageVisible = !isImageVisible;
+    wxImg.style.display = isImageVisible ? 'block' : 'none';
+  });
+
+  document.addEventListener('click', function() {
+    if (isImageVisible) {
+      wxImg.style.display = 'none';
+      isImageVisible = false;
+    }
+  });
 </script>
 
 </body>
