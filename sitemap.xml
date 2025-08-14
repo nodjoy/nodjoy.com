@@ -79,6 +79,18 @@ Docker无法启动问题解决 由于新的ubuntu系统使用了iptables-nft，�
     </entry>
     
      <entry>
+        <title>Introduce video player testing</title>
+        <url>https://nodjoy.com/part/20230430/video.html</url>
+        <categories>
+          <category>分享</category>
+        </categories>
+        <tags>
+          <tag>Video</tag>
+        </tags>
+        <content type="html">  </content>
+    </entry>
+    
+     <entry>
         <title>Docker可视化管理工具--Portainer的配置与使用</title>
         <url>https://nodjoy.com/note/20221226/portainer.html</url>
         <categories>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Video on Nodjoy</title>
+    <link>https://nodjoy.com/tags/video/</link>
+    <description>Recent content in Video on Nodjoy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 30 Apr 2023 21:05:38 +0800</lastBuildDate><atom:link href="https://nodjoy.com/tags/video/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduce video player testing</title>
+      <link>https://nodjoy.com/part/20230430/video.html</link>
+      <pubDate>Sun, 30 Apr 2023 21:05:38 +0800</pubDate>
+      
+      <guid>https://nodjoy.com/part/20230430/video.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -332,13 +332,13 @@
 </span>
 <span id="/about/" class="leancloud_visitors" data-flag-title="About">
     <span class="post-meta-item-text">阅读量: </span>
-    <span class="leancloud-visitors-count">0</span>
+    <span class="leancloud-visitors-count"></span>
 </span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <script type="text/javascript" src="https://nodjoy.com/js/google-charts.js"></script>
+    <p><script type="text/javascript" src="https://nodjoy.com/js/google-charts.js"></script>
 
 <script type="text/javascript">
     google.charts.load("current", { packages: ["timeline"] });
@@ -658,6 +658,16 @@
 <div id="work-content" style="height: 190px;"></div>
 
 
+<script>
+    $(document).ready(function() {
+        var supportAuthor = document.getElementsByClassName("support-author")[0];
+        var postNav = document.getElementsByClassName("post-nav")[0];
+        if (supportAuthor && postNav) {
+            supportAuthor.style.display = "none";
+            postNav.style.display = "none";
+        }
+    });
+</script></p>
 <hr>
 <blockquote>
 <p>联系我 👇</p>
@@ -905,7 +915,7 @@
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://nodjoy.com/post/">
-        <span class="site-state-item-count">52</span>
+        <span class="site-state-item-count">53</span>
         <span class="site-state-item-name">日志</span>
       </a>
     </div>
@@ -922,7 +932,7 @@
     <div class="site-state-item site-state-tags">
         <a href="https://nodjoy.com/tags/">
          
-        <span class="site-state-item-count">66</span>
+        <span class="site-state-item-count">67</span>
         
         <span class="site-state-item-name">标签</span>
         </a>
