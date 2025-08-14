@@ -5,18 +5,18 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>Introduce video player testing | Nodjoy</title>
+    <title>Introduce video player testing(1080p) | Nodjoy</title>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="author" content="Gowshwah">
     <meta name="copyright" content="Gowshwah">
     <meta name="keywords" content="独立,博客,程序员,个人,gowshwah,开发,思考,读书,笔记,技术,分享,PHP,Nodejs,Elixir,Docker,Linux,互联网,前端,后端">
-    <meta property="og:title" content="Introduce video player testing">
+    <meta property="og:title" content="Introduce video player testing(1080p)">
     <meta property="og:url" content="https://nodjoy.com/">
     <meta property="og:site_name" content="Nodjoy">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="Introduce video player testing - Nodjoy" />
+    <meta name="title" content="Introduce video player testing(1080p) - Nodjoy" />
     <meta name="description" content="博客 | 软件 | 开发 | PHP | Nodejs | Elixir | Docker  | Linux | 读书 | 笔记 | 个人 | gowshwah | 独立 | 思考 | 分享 | 互联网 | 前端 | 后端"> 
     <link rel="shortcut icon" href="https://nodjoy.com/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://nodjoy.com/img/apple-touch-icon.png" />
@@ -303,7 +303,7 @@
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">
         <a class="post-title-link" href="https://nodjoy.com/part/20230430/video.html" itemprop="url">
-        Introduce video player testing
+        Introduce video player testing(1080p)
         </a>
       </h1>
       <div class="post-meta">
@@ -348,7 +348,7 @@
 <span class="post-meta-item-icon">
     <i class="fa fa-eye"></i>
 </span>
-<span id="/part/20230430/video.html" class="leancloud_visitors" data-flag-title="Introduce video player testing">
+<span id="/part/20230430/video.html" class="leancloud_visitors" data-flag-title="Introduce video player testing(1080p)">
     <span class="post-meta-item-text">阅读量: </span>
     <span class="leancloud-visitors-count"></span>
 </span>
@@ -356,15 +356,26 @@
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <p><script src="https://nodjoy.com/js/DPlayer.min.js"></script>
-<div id="dplayer"></div>
+    <p><link rel="stylesheet" href="https://nodjoy.com/css/plyr.css" />
+<script src="https://nodjoy.com/js/plyr.js"></script>
+<style>
+    .plyr-container {
+        margin: 50px auto;
+        --plyr-color-main: #aaa;
+    }
+</style>
+<div class="plyr-container">
+    <video id="player" playsinline controls>
+        <source src="https://scdn.nodjoy.com/videos/IMG_0764.MOV" type="video/mp4" />
+    </video>
+</div>
 <script>
-    const dp = new DPlayer({
-    container: document.getElementById('dplayer'),
-    video: {
-        url: 'https:\/\/scdn.nodjoy.com\/videos\/IMG_0764.MOV',
-    },
-});
+        const player = new Plyr(
+            'video', 
+            {captions: {active: true}},
+        );
+    
+    window.player = player;
 </script>
 <script>
     $(document).ready(function() {
@@ -386,7 +397,7 @@
     </div>
     <div>
         <p style="margin-top:0px;">
-            &nbsp;&nbsp;标题：Introduce video player testing
+            &nbsp;&nbsp;标题：Introduce video player testing(1080p)
         <br />&nbsp;&nbsp;作者：<a target="_blank" href="https://nodjoy.com/">Nodjoy</a>
         
         <br />&nbsp;&nbsp;声明：自由转载-非商用-非衍生-保持署名
@@ -473,7 +484,7 @@
       var httpRequest = new XMLHttpRequest();
       let barkKey = "95C7PKkV6Kxu692W6LP9YN";
       let title = "网站有新的留言了! ";
-      let blogTitle = "文章:" + "Introduce video player testing " + " \n";
+      let blogTitle = "文章:" + "Introduce video player testing(1080p) " + " \n";
       let content =
         "留言内容： " + document.getElementById("veditor").value + " \n";
       let site = "链接： " + window.location.href + "  ";
@@ -512,8 +523,8 @@
 
     <div class="post-nav-prev post-nav-item">
     
-        <a href="https://nodjoy.com/note/20221226/portainer.html" rel="prev" title="Docker可视化管理工具--Portainer的配置与使用">
-        Docker可视化管理工具--Portainer的配置与使用 <i class="fa fa-chevron-right"></i>
+        <a href="https://nodjoy.com/part/20230430/video4k.html" rel="prev" title="Introduce video player testing(4K)">
+        Introduce video player testing(4K) <i class="fa fa-chevron-right"></i>
         </a>
     
     </div>
@@ -631,7 +642,7 @@
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://nodjoy.com/post/">
-        <span class="site-state-item-count">53</span>
+        <span class="site-state-item-count">54</span>
         <span class="site-state-item-name">日志</span>
       </a>
     </div>

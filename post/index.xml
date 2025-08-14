@@ -53,11 +53,20 @@
     </item>
     
     <item>
-      <title>Introduce video player testing</title>
+      <title>Introduce video player testing(1080p)</title>
       <link>https://nodjoy.com/part/20230430/video.html</link>
-      <pubDate>Sun, 30 Apr 2023 21:05:38 +0800</pubDate>
+      <pubDate>Sun, 30 Apr 2023 21:05:40 +0800</pubDate>
       
       <guid>https://nodjoy.com/part/20230430/video.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Introduce video player testing(4K)</title>
+      <link>https://nodjoy.com/part/20230430/video4k.html</link>
+      <pubDate>Sun, 30 Apr 2023 21:05:30 +0800</pubDate>
+      
+      <guid>https://nodjoy.com/part/20230430/video4k.html</guid>
       <description></description>
     </item>
     
