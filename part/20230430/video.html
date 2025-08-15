@@ -365,15 +365,15 @@
     }
 </style>
 <div class="plyr-container">
-    <video id="player" playsinline controls>
-        <source src="https://scdn.nodjoy.com/videos/IMG_0764.MOV" type="video/mp4" />
+    <video id="player" playsinline controls poster="https://dcdn.nodjoy.com/images/poster2.png">
+        <source src="https://dcdn.nodjoy.com/videos/IMG_0764.MOV" type="video/mp4" />
     </video>
 </div>
 <script>
         const player = new Plyr(
             'video', 
-            {captions: {active: true}},
-        );
+            { captions: { active: true }
+        });
     
     window.player = player;
 </script>
