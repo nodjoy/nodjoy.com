@@ -72,14 +72,14 @@ interface=vmbr2 dhcp-range=192.168.100.2,192.168.100.254,12h # 设置dhcp范围 
           <category>杂记</category>
         </categories>
         <tags>
-          <tag>wsl</tag>
+          <tag>wsl</tag><tag>docker</tag>
         </tags>
         <content type="html"> Windows 10 WSL2 安装配置 安装 WSL2 启用适用于 Linux 的 Windows 子系统 和 虚拟机平台 选项 microsoft store 搜索并安装 ubuntu22.04 设置默认版本为 WSL2 wsl --set-default-version 2 wsl2 内核更新 下载地址
 Docker无法启动问题解决 由于新的ubuntu系统使用了iptables-nft，而WSL2不支持导致的 sudo update-alternatives --set iptables /usr/sbin/iptables-legacy sudo update-alternatives --set ip6tables /usr/sbin/ip6tables-legacy 重启docker sudo service docker restart </content>
     </entry>
     
      <entry>
-        <title>Introduce video player testing(1080p)</title>
+        <title>Video player test(1080p)</title>
         <url>https://nodjoy.com/part/20230430/video.html</url>
         <categories>
           <category>分享</category>
@@ -91,7 +91,7 @@ Docker无法启动问题解决 由于新的ubuntu系统使用了iptables-nft，�
     </entry>
     
      <entry>
-        <title>Introduce video player testing(4K)</title>
+        <title>Video player test(4K)</title>
         <url>https://nodjoy.com/part/20230430/video4k.html</url>
         <categories>
           <category>分享</category>
