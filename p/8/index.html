@@ -1,29 +1,30 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
+	<meta name="generator" content="Hugo 0.105.0">
     <meta charset="UTF-8" />
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
-    <title>Koa Cookie与Session | Nodjoy</title>
+    <title>Nodjoy | Nodjoy</title>
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="author" content="Gowshwah">
     <meta name="copyright" content="Gowshwah">
     <meta name="keywords" content="独立,博客,程序员,个人,gowshwah,开发,思考,读书,笔记,技术,分享,PHP,Nodejs,Elixir,Docker,Linux,互联网,前端,后端">
-    <meta property="og:title" content="Koa Cookie与Session">
+    <meta property="og:title" content="Nodjoy">
     <meta property="og:url" content="https://nodjoy.com/">
     <meta property="og:site_name" content="Nodjoy">
     <meta property="og:image" content="/img/author.jpg"> 
-    <meta name="title" content="Koa Cookie与Session - Nodjoy" />
+    <meta name="title" content="Nodjoy - Nodjoy" />
     <meta name="description" content="博客 | 软件 | 开发 | PHP | Nodejs | Elixir | Docker  | Linux | 读书 | 笔记 | 个人 | gowshwah | 独立 | 思考 | 分享 | 互联网 | 前端 | 后端"> 
     <link rel="shortcut icon" href="https://nodjoy.com/img/favicon.ico" />
     <link rel="apple-touch-icon" href="https://nodjoy.com/img/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" href="https://nodjoy.com/img/apple-touch-icon.png" />
     <link href="https://nodjoy.com/js/vendor/font-awesome/css/all.min.css" rel="stylesheet" type="text/css" />
     <link href="https://nodjoy.com/js/vendor/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-    <link href="https://nodjoy.com/js/vendor/fancybox/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+    
     <link href="https://nodjoy.com/css/main.css" rel="stylesheet" type="text/css" />
     <link href="https://nodjoy.com/css/custom.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://nodjoy.com/css/govicons.min.css"/>
@@ -34,7 +35,7 @@
       var CONFIG = {
       scheme: 'Pisces',
       sidebar: {"position":"left","display":"post"},
-       fancybox: true, 
+      fancybox: false, 
       motion: true
       };
 	</script>
@@ -304,12 +305,14 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-<section id="posts" class="posts-expand">
+    
+ <section id="posts" class="posts-expand">
+
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline">
-        <a class="post-title-link" href="https://nodjoy.com/note/2020/08/10/koa05/" itemprop="url">
-        Koa Cookie与Session
+        <a class="post-title-link" href="https://nodjoy.com/home/welcome/" itemprop="url">
+        欢迎大家
         </a>
       </h1>
       <div class="post-meta">
@@ -318,250 +321,139 @@
     <i class="fa fa-calendar-o"></i>
 </span>
 <span class="post-meta-item-text">时间：</span>
-<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-08-10">
-    2020-08-10
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-03-22">
+    2020-03-22
 </time>
 </span> 
       
-
-  <span class="post-category" >
-  &nbsp; | &nbsp;
-  <span class="post-meta-item-icon">
-    <i class="fa fa-folder-o"></i>
-  </span>
-  <span class="post-meta-item-text">分类：</span>
-  
-    <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-      <a href="https://nodjoy.com/categories/%E7%AC%94%E8%AE%B0" itemprop="url" rel="index">
-        <span itemprop="name">笔记</span>
-      </a>
-      &nbsp; 
-    </span>
-  
-</span>
-
-
        <span>
 &nbsp; | &nbsp;
 <span class="post-meta-item-icon">
     <i class="fa fa-readme"></i>
 </span>
 <span class="post-meta-item-text">阅读：</span>
-<span class="leancloud-visitors-count">349 字 ~ 1分钟</span>
-</span>
-       <span>
-&nbsp; | &nbsp;
-<span class="post-meta-item-icon">
-    <i class="fa fa-eye"></i>
-</span>
-<span id="/note/2020/08/10/koa05/" class="leancloud_visitors" data-flag-title="Koa Cookie与Session">
-    <span class="post-meta-item-text">阅读量: </span>
-    <span class="leancloud-visitors-count"></span>
-</span>
+<span class="leancloud-visitors-count">1 字 ~ 1分钟</span>
 </span>
       </div>
     </header>
     <div class="post-body" itemprop="articleBody">
-    <h1 id="cookie">Cookie</h1>
-<h2 id="koa中设置cookie值">Koa中设置Cookie值</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ctx.cookies.set(name,value,[options]);
-</span></span></code></pre></div><p><img src="https://nodjoy.com/images/note/202008101529.png" alt=""></p>
-<h2 id="koa中获取cookie值">Koa中获取Cookie值</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ctx.cookies.get(&#39;name&#39;);
-</span></span></code></pre></div><h2 id="koa中使用buffer设置中文cookie">Koa中使用Buffer设置中文Cookie</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>//设置中文Cookie
-</span></span><span style="display:flex;"><span>router.get(&#39;/&#39;,async (ctx)=&gt;{
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    var userinfo=new Buffer(&#39;张三&#39;).toString(&#39;base64&#39;);
-</span></span><span style="display:flex;"><span>     ctx.cookies.set(&#39;userinfo&#39;,userinfo,{
-</span></span><span style="display:flex;"><span>        maxAge:60*1000*60
-</span></span><span style="display:flex;"><span>     });
-</span></span><span style="display:flex;"><span>})
-</span></span><span style="display:flex;"><span>//获取中文Cookie
-</span></span><span style="display:flex;"><span>router.get(&#39;/news&#39;,async (ctx)=&gt;{
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    var data=ctx.cookies.get(&#39;userinfo&#39;);
-</span></span><span style="display:flex;"><span>    var userinfo=new Buffer(data, &#39;base64&#39;).toString();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    console.log(userinfo);
-</span></span><span style="display:flex;"><span>})
-</span></span></code></pre></div><h1 id="session">Session</h1>
-<h2 id="安装并引入koa-session">安装并引入koa-session</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>npm install koa-session --save
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>const session = require(&#39;koa-session&#39;);
-</span></span></code></pre></div><h2 id="配置koa-session中间件">配置koa-session中间件</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>app.keys = [&#39;some secret hurr&#39;];
-</span></span><span style="display:flex;"><span>const CONFIG = {
-</span></span><span style="display:flex;"><span>key: &#39;koa:sess&#39;, //cookie key (default is koa:sess)
-</span></span><span style="display:flex;"><span>maxAge: 86400000, // cookie 的过期时间 maxAge in ms (default is 1 days)
-</span></span><span style="display:flex;"><span>overwrite: true, //是否可以 overwrite (默认 default true)
-</span></span><span style="display:flex;"><span>httpOnly: true, //cookie 是否只有服务器端可以访问 httpOnly or not (default true)
-</span></span><span style="display:flex;"><span>signed: true, //签名默认 true
-</span></span><span style="display:flex;"><span>rolling: false, //在每次请求时强行设置 cookie，这将重置 cookie 过期时间（默认：false）
-</span></span><span style="display:flex;"><span>renew: false, //(boolean) renew session when session is nearly expired,
-</span></span><span style="display:flex;"><span>};
-</span></span><span style="display:flex;"><span>app.use(session(CONFIG, app));
-</span></span></code></pre></div><h2 id="设置与获取session值">设置与获取Session值</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>//设置值
-</span></span><span style="display:flex;"><span> ctx.session.username = &#34;张三&#34;;
-</span></span><span style="display:flex;"><span>//获取值
-</span></span><span style="display:flex;"><span> ctx.session.username
-</span></span></code></pre></div>
+    Welcome
     </div>
-    <div class="post-nav">
-<div style="border: 1px dashed #e0e0e0; padding: 10px 10px 10px 10px; background-color: #fffeee; background-repeat: no-repeat; background-attachment: scroll; background-position: 1% 50%; -moz-background-size: auto auto; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;">
-    <div style="float:left;margin-top:0px;">
-    <img src="https://nodjoy.com/img/author.jpg" style="width: 110px;"/>
-    <div style="text-align:center;"></div>
-    </div>
-    <div>
-        <p style="margin-top:0px;">
-            &nbsp;&nbsp;标题：Koa Cookie与Session
-        <br />&nbsp;&nbsp;作者：<a target="_blank" href="https://nodjoy.com/">Nodjoy</a>
-        
-        <br />&nbsp;&nbsp;声明：自由转载-非商用-非衍生-保持署名
-        </p>
-    </div>
-</div>
-<div class="clear"></div>
-</div>
-    <hr />
-    <div id="boxyCover" class="cover_bg" _hover-ignore="1"></div>
-<div class="pop pop_main_box hangge_boxy_alert" style="display: none;">
-	<i class="pop-close fa fa-thin fa-xmark" onclick="closePayPage()"></i>
-	<div class="pop-title" _hover-ignore="1">
-		<div class="pop_name">给 nodjoy.com 打赏......</div>
-	</div>
-	
-	<div class="pop-content">
-		<div class="pop-interval-30" _hover-ignore="1">
-			<div class="pop-slogan">
-				<p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作。</p>
-			</div>
-			<div class="gratuity-process">
-				<div style="float:left;width:48%;text-align:center">
-					<img class="pop-slogan-img" width="80%" src="https://nodjoy.com/images/pay/eb05acdaec967.png">
-				</div>
-				<div style="float:right;width:48%;text-align:center">
-					<img class="pop-slogan-img" width="80%" src="https://nodjoy.com/images/pay/0831de845.png">
-				</div>
-                <div style="float:left;width: 100%;height: 26px;"></div>
-				<div class="clear"></div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="support-author">
-    <div class="btn btn-pay">打赏支持</div>
-</div><br/>
-<script>
-    $(".pop_main_box").hide();
-    $("#boxyCover").hide();
-    $(document).ready(function(){
-        $(".btn-pay").click(function(){
-            $(".pop").css({display:"block"});
-            $(".pop_main_box").show();
-            $("#boxyCover").show();
-        });
-
-		$(".cover_bg").click(function(){
-            $(".pop").css({display:"none"});
-            $(".pop_main_box").hide();
-            $("#boxyCover").hide();
-        });
-    });
-    function closePayPage(){
-        $(".pop_main_box").hide();
-        $("#boxyCover").hide();
-    }
-</script>
     
-    <div class="post-comment">
-      
-      
- <script src='https://nodjoy.com/js/Valine.min.js'></script>
-<div id="vcomments"></div>
-<script>
-  new Valine({
-    el: "#vcomments",
-    appId: "9iOmqWQl7wQBsarOb3o2m0eO-gzGzoHsz",
-    appKey: "U2cCMaQisH6I3GsyClKuvrwK",
-    path: "\/note\/2020\/08\/10\/koa05\/",
-    avatar: "wavatar",
-    avatar_cdn: "https:\/\/cravatar.cn\/avatar\/",
-    placeholder: "说点什么吧...",
-    visitor: true,
-  });
-</script> 
-<script type="text/javascript">
-  
-  let vsubmit = document.getElementsByClassName("vsubmit");
-  for (var i in vsubmit) {
-    vsubmit[i].onclick = function () {
-      
-      var httpRequest = new XMLHttpRequest();
-      let barkKey = "95C7PKkV6Kxu692W6LP9YN";
-      let title = "网站有新的留言了! ";
-      let blogTitle = "文章:" + "Koa Cookie与Session " + " \n";
-      let content =
-        "留言内容： " + document.getElementById("veditor").value + " \n";
-      let site = "链接： " + window.location.href + "  ";
-      var date = new Date();
-      let subDate = "时间： " + date.toLocaleString() + " ";
-      
-      let url =
-        "//api.day.app/" + barkKey + "/" + title + "/" + blogTitle + content;
-      httpRequest.open("GET", url, true);
-      httpRequest.send();
-    };
-  }
-</script>
-
-
-    </div>
-    <footer class="post-footer">
-     
- 
-<div class="post-tags">     
-     
-    <a href="https://nodjoy.com/tags/koa" rel="tag" title="Koa">#Koa#</a>
-    
-    <a href="https://nodjoy.com/tags/node.js" rel="tag" title="Node.js">#Node.js#</a>
-    
-</div>
-
-
-
-     <div class="post-nav">
-    <div class="post-nav-next post-nav-item">
-    
-        <a href="https://nodjoy.com/note/2020/08/10/koa06/" rel="next" title="使用Koa应用生成器快速生成koa应用">
-        <i class="fa fa-chevron-left"></i> 使用Koa应用生成器快速生成koa应用
-        </a>
-    
-    </div>
-
-    <div class="post-nav-prev post-nav-item">
-    
-        <a href="https://nodjoy.com/note/2020/08/10/koa04/" rel="prev" title="Koa post提交数据与静态资源中间件">
-        Koa post提交数据与静态资源中间件 <i class="fa fa-chevron-right"></i>
-        </a>
-    
-    </div>
-</div>
-      
-     
-     
-     
-
-
-
-
-    </footer>
+    <footer class="post-footer"><div class="post-eof"></div></footer>
   </article>
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">
+        <a class="post-title-link" href="https://nodjoy.com/about/" itemprop="url">
+        About
+        </a>
+      </h1>
+      <div class="post-meta">
+      <span class="post-time">
+<span class="post-meta-item-icon">
+    <i class="fa fa-calendar-o"></i>
+</span>
+<span class="post-meta-item-text">时间：</span>
+<time itemprop="dateCreated" datetime="2016-03-22T13:04:35+08:00" content="2020-01-06">
+    2020-01-06
+</time>
+</span> 
+      
+       <span>
+&nbsp; | &nbsp;
+<span class="post-meta-item-icon">
+    <i class="fa fa-readme"></i>
+</span>
+<span class="post-meta-item-text">阅读：</span>
+<span class="leancloud-visitors-count">8 字 ~ 1分钟</span>
+</span>
+      </div>
+    </header>
+    <div class="post-body" itemprop="articleBody">
+    教育 工作 联系我 👇
+    </div>
+    
+    <footer class="post-footer"><div class="post-eof"></div></footer>
+  </article>
+
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<nav class="pagination">
+    <a class="extend prev" rel="prev" href="https://nodjoy.com/p/7/"><i class="fa fa-angle-left"></i></a>
+    
+        
+        
+          <a class="page-number" href="https://nodjoy.com/">1</a>
+        
+        
+    
+        
+        
+          <a class="page-number" href="https://nodjoy.com/p/2/">2</a>
+        
+        
+    
+        
+        
+          <a class="page-number" href="https://nodjoy.com/p/3/">3</a>
+        
+        
+    
+        
+        
+          <a class="page-number" href="https://nodjoy.com/p/4/">4</a>
+        
+        
+    
+        
+        
+          <a class="page-number" href="https://nodjoy.com/p/5/">5</a>
+        
+        
+    
+        
+        
+          <a class="page-number" href="https://nodjoy.com/p/6/">6</a>
+        
+        
+    
+        
+        
+          <a class="page-number" href="https://nodjoy.com/p/7/">7</a>
+        
+        
+    
+        
+        
+          <span class="page-number current">8</span>
+        
+        
+    
+    
+</nav>
+
+
+
 
           </div>
         </div>
@@ -575,16 +467,7 @@
 <aside id="sidebar" class="sidebar">
   <div class="sidebar-inner">
 
-  <ul class="sidebar-nav motion-element">
-    <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-      文章目录
-    </li>
-    <li class="sidebar-nav-overview" data-target="site-overview">
-      站点概览
-    </li>
-  </ul>
-
-    <section class="site-overview sidebar-panel ">
+    <section class="site-overview sidebar-panel  sidebar-panel-active ">
       <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image"
         src="https://nodjoy.com/img/author.jpg"
@@ -664,7 +547,7 @@
       <nav class="site-state motion-element">
     <div class="site-state-item site-state-posts">
       <a href="https://nodjoy.com/post/">
-        <span class="site-state-item-count">54</span>
+        <span class="site-state-item-count">58</span>
         <span class="site-state-item-name">日志</span>
       </a>
     </div>
@@ -681,13 +564,20 @@
     <div class="site-state-item site-state-tags">
         <a href="https://nodjoy.com/tags/">
          
-        <span class="site-state-item-count">67</span>
+        <span class="site-state-item-count">73</span>
         
         <span class="site-state-item-name">标签</span>
         </a>
     </div>
 </nav>
       
+<div class="feed-link motion-element">
+<a href="https://nodjoy.com/index.xml" rel="alternate" type="application/rss+xml" target="_blank">
+    <i class="fa fa-rss"></i>
+    RSS 订阅
+</a>
+</div>
+
       
 <div class="links-of-site motion-element">
     <div class="links-of-blogroll-title">
@@ -811,24 +701,6 @@
 
     </section>
     
-<section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-    <div class="post-toc">
-        <div class="post-toc-content"><nav id="TableOfContents">
-  <ul>
-    <li><a href="#koa中设置cookie值">Koa中设置Cookie值</a></li>
-    <li><a href="#koa中获取cookie值">Koa中获取Cookie值</a></li>
-    <li><a href="#koa中使用buffer设置中文cookie">Koa中使用Buffer设置中文Cookie</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#安装并引入koa-session">安装并引入koa-session</a></li>
-    <li><a href="#配置koa-session中间件">配置koa-session中间件</a></li>
-    <li><a href="#设置与获取session值">设置与获取Session值</a></li>
-  </ul>
-</nav></div>
-    </div>
-</section>
-
   </div>
 </aside>
 
@@ -925,18 +797,16 @@
 ></script>
 <script src="https://nodjoy.com/js/vendor/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
 
-<script src="https://nodjoy.com/js/vendor/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
-
 <script type="text/javascript" src="https://nodjoy.com/js/utils.js"></script>
 <script type="text/javascript" src="https://nodjoy.com/js/motion.js"></script>
 <script type="text/javascript" src="https://nodjoy.com/js/affix.js"></script>
 <script type="text/javascript" src="https://nodjoy.com/js/schemes/pisces.js"></script>
 
-<script type="text/javascript" src="https://nodjoy.com/js/scrollspy.js"></script>
-<script type="text/javascript" src="https://nodjoy.com/js/post-details.js"></script>
-<script type="text/javascript" src="https://nodjoy.com/js/toc.js"></script>
-
 <script type="text/javascript" src="https://nodjoy.com/js/bootstrap.js"></script>
+
+<script type="text/javascript" id="motion.page.archive">
+  $(".archive-year").velocity("transition.slideLeftIn");
+</script>
 
 <script type="text/javascript" src="https://nodjoy.com/js/search.js"></script>
 <script type="text/javascript" src="https://nodjoy.com/js/moment.js"></script>
